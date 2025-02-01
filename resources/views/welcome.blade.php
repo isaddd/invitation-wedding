@@ -74,7 +74,7 @@
     <!-- getting married -->
     <div id="save-the-date" class="bg-black pt-5 mobile-screen">
       <div class="container pt-5 mt-4 text-center text-white">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-550">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">We Are</h1>
           <h1 class="beau f42">Getting Married</h1>
         </div>

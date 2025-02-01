@@ -18,9 +18,5 @@ use App\Http\Controllers\UcapanController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/tes', function () {
-    return view('tes');
-});
-
 Route::get('/', [UcapanController::class, 'index'])->name('ucapan.index');
 Route::post('/ucapan', [UcapanController::class, 'store'])->name('ucapan.store');
