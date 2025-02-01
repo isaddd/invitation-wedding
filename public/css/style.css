@@ -146,13 +146,13 @@ body {
 }
 .surat-title-1 {
     position: absolute;
-    top: 15%;
+    top: 10%;
     text-align: center;
     color: #fff;
 }
 .surat-title-2 {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     text-align: center;
     color: #fff;
 }
@@ -177,7 +177,7 @@ body {
 }
 .title-hero {
     position: absolute;
-    bottom: 15px;
+    bottom: 10%;
     color: #fff;
     z-index: 2;
 }

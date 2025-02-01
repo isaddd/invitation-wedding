@@ -35,7 +35,7 @@
       <div class="container surat-title-2"  style="z-index: 2;">
         <h1 data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
         <h1 data-aos="fade-up" data-aos-duration="1000" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
-        <a href="#wedding" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200" onClick="enableScroll()" class="btn-undangan abhaya-extrabold text-uppercase">Buka Undangan</a>
+        <a href="#wedding" data-aos="fade-up" data-aos-duration="1000" onClick="enableScroll()" class="btn-undangan abhaya-extrabold text-uppercase">Buka Undangan</a>
       </div>
     </div>
     <!--  -->
@@ -56,9 +56,9 @@
       </div>
       <div class="container title-hero">
         <div class="text-center">
-          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-500" class="beau" style="line-height: 0.75">The Wedding of</h1>
-          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-550" class="abhaya-bold f48" style="margin-bottom: 20px">Irsyad & Fanny</h1>
-          <div class="countdown" data-aos="fade" data-aos-duration="1000" data-aos-offset="-650">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-600" class="beau" style="line-height: 0.75">The Wedding of</h1>
+          <h1 data-aos="fade-up" data-aos-duration="1000" class="abhaya-bold f48" style="margin-bottom: 20px">Irsyad & Fanny</h1>
+          <div class="countdown" data-aos="fade" data-aos-duration="1000">
             <ul class="mx-auto">
               <li><span class="fs-1" id="hari"></span><br /><span class="">Hari</span></li>
               <li><span class="fs-1" id="jam"></span><br /><span class="">Jam</span></li>
@@ -74,16 +74,16 @@
     <!-- getting married -->
     <div id="save-the-date" class="bg-black pt-5 mobile-screen">
       <div class="container pt-5 mt-4 text-center text-white">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">We Are</h1>
           <h1 class="beau f42">Getting Married</h1>
         </div>
-        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="0" class="divider-love">
+        <div data-aos="fade" data-aos-duration="1000" class="divider-love">
           <div class="divider"></div>
           <div class="mx-2 f30">&#x2661;</div>
           <div class="divider"></div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" class="desc px-4 py-4">
+        <div data-aos="fade-up" data-aos-duration="1000" class="desc px-4 py-4">
           <h3 class="f16 abhaya-regular mb-5">
             Siang dan malam berganti begitu cepat, diantara saat saat mendebarkan yang belum pernah kami rasakan sebelum nya. kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia:
           </h3>
@@ -92,7 +92,7 @@
             <span style="margin-top: 2.5px">SAVE THE DATE</span>
           </a>
         </div>
-        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="-450" class="slider-swiper px-4 pt-5">
+        <div data-aos="fade" data-aos-duration="1000" class="slider-swiper px-4 pt-5">
           <div class="img-swiper" style="width: 72px; height: 72px; border-radius: 50%; overflow: hidden !important; margin: 0 2px">
             <img src="img/slider/1.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
           </div>
@@ -115,19 +115,19 @@
 
     <!-- bride groom -->
     <div id="bride-groom" class="bg-black mobile-screen" style="padding-top: 70px; margin-top: -1px; padding-bottom: 70px; margin-bottom: -1px">
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-650" class="container d-flex justify-content-center align-items-center">
+      <div data-aos="fade-up" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center">
         <img src="img/PNG-Instagram-Filter-1024x217.png" class="img-fluid" style="width: 170px" alt="" />
       </div>
       <div class="container text-white text-center">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-650" class="desc px-4 py-4">
+        <div data-aos="fade-up" data-aos-duration="1000" class="desc px-4 py-4">
           <h1 class="beau f42">Bride & Groom</h1>
           <h3 class="f16 abhaya-regular mt-4 mb-5">Maha Suci Allah Subhanahu wa Ta'ala yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah dan Ridhoilah Pernikahan Kami.</h3>
         </div>
         <div class="">
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-650" class="container d-flex justify-content-center align-items-center">
+          <div data-aos="fade-up" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center">
             <img src="img/fanny.png" class="img-fluid" style="width: 170px" alt="" />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-650" class="text-center text-white mt-3">
+          <div data-aos="fade-up" data-aos-duration="1000" class="text-center text-white mt-3">
             <h2 class="abhaya-bold">Geizka Fanny Azzahra</h2>
             <div class="abhaya-bold">Putri dari</div>
             <div class="abhaya-bold">
@@ -139,15 +139,15 @@
               <span>@geizka.fanny</span>
             </a>
           </div>
-          <div data-aos="fade" data-aos-duration="1000" data-aos-offset="-650" class="divider-love">
+          <div data-aos="fade" data-aos-duration="1000" class="divider-love">
             <div class="divider"></div>
             <div class="mx-3 f46 carattere">&</div>
             <div class="divider"></div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-610" class="container d-flex justify-content-center align-items-center pt-4">
+          <div data-aos="fade-up" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center pt-4">
             <img src="img/irsyad.png" class="img-fluid" style="width: 170px" alt="" />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-610" class="text-center text-white mt-3">
+          <div data-aos="fade-up" data-aos-duration="1000" class="text-center text-white mt-3">
             <h2 class="abhaya-bold">Irsyad Bagas Dwi Setiawan</h2>
             <div class="abhaya-bold">Putra dari</div>
             <div class="abhaya-bold">
@@ -168,8 +168,8 @@
     <div id="qs" class="py-5 bg-qs mobile-screen">
       <div class="overlay-qs"></div>
       <div class="container overlay-qs-content">
-        <img data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200" src="img/icon-wedding.png" class="img-fluid mb-4" style="width: 50px" alt="" />
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200" class="desc px-4 py-4">
+        <img data-aos="fade-up" data-aos-duration="1000" src="img/icon-wedding.png" class="img-fluid mb-4" style="width: 50px" alt="" />
+        <div data-aos="fade-up" data-aos-duration="1000" class="desc px-4 py-4">
           <h3 class="f16 abhaya-regular mb-4">
             "Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan hati dan dijadikannya kasih sayang di antara kamu. Sesungguhnya yang demikian menjadi tanda-tanda
             kebesaran-Nya bagi orang-orang yang berpikir."
@@ -184,11 +184,11 @@
     <div id="date" class="bg-date mobile-screen">
       <div class="overlay-date"></div>
       <div class="container overlay-date-content py-5 px-4" style="overflow-x: hidden">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-100" class="mt-2 mb-5">
+        <div data-aos="fade-up" data-aos-duration="1000" class="mt-2 mb-5">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Save</h1>
           <h1 class="beau f42">The Date</h1>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-150" class="px-3 bg-date-1">
+        <div data-aos="fade-left" data-aos-duration="1000" class="px-3 bg-date-1">
           <div class="overlay-date-1"></div>
           <div class="overlay-date-1-content">
             <h1 class="beau f46 mb-4">Akad Nikah</h1>
@@ -206,7 +206,7 @@
             </a>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-550" class="bg-date-2 px-3 mt-4">
+        <div data-aos="fade-right" data-aos-duration="1000" class="bg-date-2 px-3 mt-4">
           <div class="overlay-date-2"></div>
           <div class="overlay-date-2-content">
             <h1 class="beau f46 mb-4">Resepsi</h1>
@@ -231,33 +231,33 @@
     <!-- love story -->
     <div id="love-story" class="mobile-screen" style="background-color: rgb(210, 210, 210)">
       <div class="container px-4 py-5 text-black" style="overflow-x: hidden">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="pt-2 pb-5 text-center">
+        <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 pb-5 text-center">
           <h1 class="abhaya-bold f40" style="line-height: 0.2">Our Love</h1>
           <h1 class="beau f42">Story</h1>
         </div>
         <div class="row justify-content-center align-items-center">
-          <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-50" class="col-5">
+          <div data-aos="fade-right" data-aos-duration="1000" class="col-5">
             <img src="img/stori-1.png" class="img-fluid" alt="" />
           </div>
-          <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-50" class="col-7">
+          <div data-aos="fade-left" data-aos-duration="1000" class="col-7">
             <h1 class="abhaya-extrabold" style="line-height: 1">Awal <br />Bertemu</h1>
             <h3 class="f16 abhaya-regular" style="font-style: italic">"Awal mula kami bertemu adalah dalam salah satu Sekolah Menengah Kejuruan yang ada di Solo sebagai siswa satu kelas."</h3>
           </div>
         </div>
         <div class="my-5 row justify-content-center align-items-center">
-          <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-50" class="col-7 text-end">
+          <div data-aos="fade-right" data-aos-duration="1000" class="col-7 text-end">
             <h1 class="abhaya-extrabold" style="line-height: 1">Komitmen</h1>
             <h3 class="f16 abhaya-regular" style="font-style: italic">"Setelah berkomunikasi beberapa bulan dan menemukan kecocokan akhirnya kami memutuskan untuk menjalin sebuah komitmen."</h3>
           </div>
-          <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-50" class="col-5">
+          <div data-aos="fade-left" data-aos-duration="1000" class="col-5">
             <img src="img/stori-2.png" class="img-fluid" alt="" />
           </div>
         </div>
         <div class="row justify-content-center align-items-center">
-          <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-50" class="col-5">
+          <div data-aos="fade-right" data-aos-duration="1000" class="col-5">
             <img src="img/stori-3.png" class="img-fluid" alt="" />
           </div>
-          <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-50" class="col-7">
+          <div data-aos="fade-left" data-aos-duration="1000" class="col-7">
             <h1 class="abhaya-extrabold" style="line-height: 1">Menikah</h1>
             <h3 class="f16 abhaya-regular" style="font-style: italic">"Setelah menjalin hubungan beberapa tahun, akhirnya kami memantabkan hati untuk membawa hubungan ini ke jenjang yang lebih serius untuk hidup dan menua bersama."</h3>
           </div>
@@ -268,87 +268,87 @@
     <!-- gallery -->
     <div id="gallery" class="mobile-screen bg-white">
       <div class="container px-4 py-5 text-black">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="pt-2 pb-5 text-center">
+        <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 pb-5 text-center">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">PreWedding</h1>
           <h1 class="beau f42">Gallery</h1>
         </div>
         <div class="gallery">
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-10.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-11.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-4.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-13.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-8.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-1.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-5.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-12.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-6.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-2.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-3.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-7.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-9.webp" alt="galery" />
             </figure>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+          <div data-aos="fade-up" data-aos-duration="1000" class="gallery-item">
             <figure>
               <img src="img/gallery/galeri-14.webp" alt="galery" />
             </figure>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-regular text-black text-center f16 pt-5" style="line-height: 1.1; font-style: italic">
+        <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular text-black text-center f16 pt-5" style="line-height: 1.1; font-style: italic">
           “I love you. I am who I am because of you. You are every reason, every hope, and every dream I've ever had, and no matter what happens to us in the future, everyday we are together is the greatest day of my life. I will always be
           yours. ”
         </div>
-        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="1500" class="divider-love">
+        <div data-aos="fade" data-aos-duration="1000" class="divider-love">
           <div class="divider bg-black"></div>
           <div class="mx-2 f30">&#x2661;</div>
           <div class="divider bg-black"></div>
@@ -361,15 +361,15 @@
       <div class="bg-ucapan" style="overflow-x: hidden">
         <div class="overlay-ucapan"></div>
         <div class="container px-4 py-5 text-black overlay-ucapan-content">
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="pt-2 text-center">
+          <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 text-center">
             <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
             <h1 class="beau f42">Wishes</h1>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-regular text-black text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
+          <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular text-black text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
             Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/ Ibu/ Saudara/ i berkenan hadir, untuk memberikan do'a restu kepada kedua mempelai.
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="ucapan p-4 my-5 text-start position-relative">
+          <div data-aos="fade-up" data-aos-duration="1000" class="ucapan p-4 my-5 text-start position-relative">
             <div class="blur"></div>
             <div class="container" style="z-index: 2; position: relative">
               <!-- Success Message -->
@@ -441,13 +441,13 @@
           </div>
           {{-- total hadir tidak hadir --}}
           <div class="row justify-content-center mb-4">
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="1500" class="col-5 abhaya-extrabold">
+            <div data-aos="fade-right" data-aos-duration="1000" class="col-5 abhaya-extrabold">
               <div class="" style="background: green; padding: 5px; color: white; border-radius: 10px">
                 <div id="hadir-count" class="">{{ $ucapan->where('hadir', 1)->count() }}</div>
                 <div class="">Hadir</div>
               </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="1500" class="col-5 abhaya-extrabold">
+            <div data-aos="fade-left" data-aos-duration="1000" class="col-5 abhaya-extrabold">
               <div class="" style="background: red; padding: 5px; color: white; border-radius: 10px">
                 <div id="tidak-hadir-count" class="">{{ $ucapan->where('hadir', 0)->count() }}</div>
                 <div class="">Tidak Hadir</div>
@@ -455,11 +455,11 @@
             </div>
           </div>
           <!-- Ucapan Count (Dynamic Count) -->
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="ucapan-count mt-3 text-center">
+          <div data-aos="fade-up" data-aos-duration="1000" class="ucapan-count mt-3 text-center">
             <strong><span id="ucapan-count">{{ $ucapan->count() }}</span> Ucapan</strong>
           </div>
           <!-- Displaying UCAPAN data -->
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="data-ucapan p-4 text-start" style="background: white; border-radius: 30px">
+          <div data-aos="fade-up" data-aos-duration="1000" class="data-ucapan p-4 text-start" style="background: white; border-radius: 30px">
             @php $visibleItems = 3; $totalItems = $ucapan->count(); @endphp
 
             <div id="ucapan-list">
@@ -489,10 +489,10 @@
       </div>
       <div class="bg-black position-relative">
         <div class="container px-4 pt-4" style="padding-bottom: 140px; margin-bottom: -2px">
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-regular text-white text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
+          <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular text-white text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
             "Semoga Allah memberkahimu dan memberkahi apa yang menjadi tanggung jawabmu, serta menyatukan kalian berdua dalam kebaikan."
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-bold text-white text-center f16 pt-4 px-5" style="line-height: 1.1; font-style: italic">
+          <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-bold text-white text-center f16 pt-4 px-5" style="line-height: 1.1; font-style: italic">
             (HR. Ahmad, at-Tirmidzi, an-Nasa'i, Abu Dawud, dan Ibnu Majah)
           </div>
         </div>
@@ -505,15 +505,15 @@
     <div id="gift" class="bg-gift mobile-screen">
       <div class="overlay-gift"></div>
       <div class="container px-4 py-5 text-black overlay-gift-content">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="pt-2 text-center">
+        <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 text-center">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
           <h1 class="beau f42">Gift</h1>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-regular text-black text-center f16 pt-4 mb-5" style="line-height: 1.1; font-style: italic">
+        <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular text-black text-center f16 pt-4 mb-5" style="line-height: 1.1; font-style: italic">
           Do'a restu keluarga, sahabat, serta rekan-rekan semua di pernikahan kami sudah sangat cukup sebagai hadiah, tetapi jika memberi merupakan tanda kasih, kami dengan senang hati menerimanya dan tentunya semakin melengkapi kebahagiaan
           kami.
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="bank text-center p-5">
+        <div data-aos="fade-up" data-aos-duration="1000" class="bank text-center p-5">
           <div class="blur"></div>
           <div class="position-relative" style="z-index: 2">
             <img src="img/bca.png" class="img-fluid text-center mb-2" style="width: 100px" alt="" />
@@ -538,20 +538,20 @@
     <div id="footer" class="bg-footer mobile-screen">
       <div class="overlay-footer"></div>
       <div class="container text-center py-5 overlay-footer-content">
-        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="1500" class="mt-4">
+        <div data-aos="fade" data-aos-duration="1000" class="mt-4">
           <img src="img/footer-img.png" class="img-fluid" style="width: 100px" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="text-center text-white px-4" style="margin-top: 100px">
+        <div data-aos="fade-up" data-aos-duration="1000" class="text-center text-white px-4" style="margin-top: 100px">
           <h3 class="f12 abhaya-bold">KAMI YANG BERBAHAGIA</h3>
           <h1 class="carattere f46">Irsyad & Fanny</h1>
           <h3 class="f16 abhaya-bold">Atas kehadiran dan doa restunya kami ucapkan terima kasih</h3>
         </div>
-        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="1500" class="divider-love">
+        <div data-aos="fade" data-aos-duration="1000" class="divider-love">
           <div class="divider"></div>
           <div class="mx-2 f30 text-white">&#x2661;</div>
           <div class="divider"></div>
         </div>
-        <img data-aos="fade" data-aos-duration="1000" data-aos-offset="1500" src="img/flower.png" class="img-fluid mt-5" style="width: 60px" alt="" />
+        <img data-aos="fade" data-aos-duration="1000" src="img/flower.png" class="img-fluid mt-5" style="width: 60px" alt="" />
         <div class="mt-4">
           <p class="abhaya-bold text-white" style="line-height: 1.1">
             Design by love: <br />
