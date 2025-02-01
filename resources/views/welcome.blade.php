@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Irsyad & Fanny</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Beau+Rivage&family=Carattere&display=swap" rel="stylesheet" />
+
+    {{-- aos animation --}}
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- slick slider -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- surat -->
+    <div id="full-screen-overlay" class="full position-relative mobile-screen" style="overflow: hidden">
+      <div class="gradient-banner-surat"></div>
+      <img src="img/black.jpg" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+      <div class="container surat-title-1" style="z-index: 2;">
+        <h1 class="abhaya-bold f16" data-aos="fade-up" data-aos-duration="1000">THE WEDDING OF</h1>
+        <h1 class="carattere f48" data-aos="fade-up" data-aos-duration="1000">Irsyad & Fanny</h1>
+      </div>
+      <div class="container surat-title-2"  style="z-index: 2;">
+        <h1 data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
+        <a href="#wedding" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200" onClick="enableScroll()" class="btn-undangan abhaya-extrabold text-uppercase">Buka Undangan</a>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- hero -->
+    <div id="wedding" class="hero position-relative mobile-screen">
+      <div class="gradient-banner"></div>
+      <div class="hero-slider bg-black mobile-screen">
+        <div style="width: 100vw; height: 100vh; overflow: hidden">
+          <img src="img/black-1.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+        </div>
+        <div style="width: 100vw; height: 100vh; overflow: hidden">
+          <img src="img/black-2.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+        </div>
+        <div style="width: 100vw; height: 100vh; overflow: hidden">
+          <img src="img/black-3.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+        </div>
+      </div>
+      <div class="container title-hero">
+        <div class="text-center">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-500" class="beau" style="line-height: 0.75">The Wedding of</h1>
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-550" class="abhaya-bold f48" style="margin-bottom: 20px">Irsyad & Fanny</h1>
+          <div class="countdown" data-aos="fade" data-aos-duration="1000" data-aos-offset="-650">
+            <ul class="mx-auto">
+              <li><span class="fs-1" id="hari"></span><br /><span class="">Hari</span></li>
+              <li><span class="fs-1" id="jam"></span><br /><span class="">Jam</span></li>
+              <li><span class="fs-1" id="menit"></span><br /><span class="">Menit</span></li>
+              <li><span class="fs-1" id="detik"></span><br /><span class="">Detik</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- getting married -->
+    <div id="save-the-date" class="bg-black pt-5 mobile-screen">
+      <div class="container pt-5 mt-4 text-center text-white">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-550">
+          <h1 class="abhaya-extrabold f40" style="line-height: 0.2">We Are</h1>
+          <h1 class="beau f42">Getting Married</h1>
+        </div>
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="-510" class="divider-love">
+          <div class="divider"></div>
+          <div class="mx-2 f30">&#x2661;</div>
+          <div class="divider"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-550" class="desc px-4 py-4">
+          <h3 class="f16 abhaya-regular mb-5">
+            Siang dan malam berganti begitu cepat, diantara saat saat mendebarkan yang belum pernah kami rasakan sebelum nya. kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia:
+          </h3>
+          <a href="#save-the-date" onclick="saveToGoogleCalendar()" class="btn-date abhaya-extrabold text-uppercase d-flex align-items-center justify-content-center">
+            <img src="img/calendar.svg" style="width: 1rem" class="me-1" alt="" />
+            <span style="margin-top: 2.5px">SAVE THE DATE</span>
+          </a>
+        </div>
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="-550" class="slider-swiper px-4 pt-5">
+          <div class="img-swiper" style="width: 72px; height: 72px; border-radius: 50%; overflow: hidden !important; margin: 0 2px">
+            <img src="img/slider/1.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+          </div>
+          <div class="img-swiper" style="width: 72px; height: 72px; border-radius: 50%; overflow: hidden !important; margin: 0 2px">
+            <img src="img/slider/2.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+          </div>
+          <div class="img-swiper" style="width: 72px; height: 72px; border-radius: 50%; overflow: hidden !important; margin: 0 2px">
+            <img src="img/slider/3.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+          </div>
+          <div class="img-swiper" style="width: 72px; height: 72px; border-radius: 50%; overflow: hidden !important; margin: 0 2px">
+            <img src="img/slider/4.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+          </div>
+          <div class="img-swiper" style="width: 72px; height: 72px; border-radius: 50%; overflow: hidden !important; margin: 0 2px">
+            <img src="img/slider/5.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- bride groom -->
+    <div id="bride-groom" class="bg-black mobile-screen" style="padding-top: 70px; margin-top: -1px; padding-bottom: 70px; margin-bottom: -1px">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-750" class="container d-flex justify-content-center align-items-center">
+        <img src="img/PNG-Instagram-Filter-1024x217.png" class="img-fluid" style="width: 170px" alt="" />
+      </div>
+      <div class="container text-white text-center">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-750" class="desc px-4 py-4">
+          <h1 class="beau f42">Bride & Groom</h1>
+          <h3 class="f16 abhaya-regular mt-4 mb-5">Maha Suci Allah Subhanahu wa Ta'ala yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah dan Ridhoilah Pernikahan Kami.</h3>
+        </div>
+        <div class="">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-650" class="container d-flex justify-content-center align-items-center">
+            <img src="img/fanny.png" class="img-fluid" style="width: 170px" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-650" class="text-center text-white mt-3">
+            <h2 class="abhaya-bold">Geizka Fanny Azzahra</h2>
+            <div class="abhaya-bold">Putri dari</div>
+            <div class="abhaya-bold">
+              Alm. Bapak Muhamad Sahid dan <br />
+              Ibu Sri Margiyati
+            </div>
+            <a href="https://www.instagram.com/geizka.fanny" target="_blank" class="btn-ig abhaya-bold mt-3">
+              <img src="img/instagram.svg" style="width: 1rem" class="me-1" alt="" />
+              <span>@geizka.fanny</span>
+            </a>
+          </div>
+          <div data-aos="fade" data-aos-duration="1000" data-aos-offset="-650" class="divider-love">
+            <div class="divider"></div>
+            <div class="mx-3 f46 carattere">&</div>
+            <div class="divider"></div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-610" class="container d-flex justify-content-center align-items-center pt-4">
+            <img src="img/irsyad.png" class="img-fluid" style="width: 170px" alt="" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-610" class="text-center text-white mt-3">
+            <h2 class="abhaya-bold">Irsyad Bagas Dwi Setiawan</h2>
+            <div class="abhaya-bold">Putra dari</div>
+            <div class="abhaya-bold">
+              Bapak Slamet Supadi dan <br />
+              Ibu Upik Susilowati
+            </div>
+            <a href="https://www.instagram.com/irsyad.bgs" target="_blank" class="btn-ig abhaya-bold mt-3">
+              <img src="img/instagram.svg" style="width: 1rem" class="me-1" alt="" />
+              <span>@irsyad.bgs</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- qs -->
+    <div id="qs" class="py-5 bg-qs mobile-screen">
+      <div class="overlay-qs"></div>
+      <div class="container overlay-qs-content">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200" src="img/icon-wedding.png" class="img-fluid mb-4" style="width: 50px" alt="" />
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200" class="desc px-4 py-4">
+          <h3 class="f16 abhaya-regular mb-4">
+            "Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan hati dan dijadikannya kasih sayang di antara kamu. Sesungguhnya yang demikian menjadi tanda-tanda
+            kebesaran-Nya bagi orang-orang yang berpikir."
+          </h3>
+          <h3 class="abhaya-bold f22">- Q.S. Ar-Rum : 21 -</h3>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- date -->
+    <div id="date" class="bg-date mobile-screen">
+      <div class="overlay-date"></div>
+      <div class="container overlay-date-content py-5 px-4" style="overflow-x: hidden">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-100" class="mt-2 mb-5">
+          <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Save</h1>
+          <h1 class="beau f42">The Date</h1>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-150" class="px-3 bg-date-1">
+          <div class="overlay-date-1"></div>
+          <div class="overlay-date-1-content">
+            <h1 class="beau f46 mb-4">Akad Nikah</h1>
+            <h3 class="abhaya-bold f16">Sabtu, 22 February 2025</h3>
+            <h3 class="abhaya-bold f16">Pukul : 08.00 WIB</h3>
+            <img src="img/location.png" class="img-fluid text-center mt-2 mb-3" style="width: 50px" alt="" />
+            <h3 class="abhaya-bold f16">
+              Lokasi: <br />
+              Gedung Niekmat Rasa <br />
+              Jl. Veteran No.284 Tipes, Serengan, Surakarta
+            </h3>
+            <a href="https://maps.app.goo.gl/be5K1fYdSPKqmwut7" target="_blank" class="btn-ig abhaya-bold mt-3">
+              <img src="img/loc.svg" style="width: 1rem" class="me-1" alt="" />
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-550" class="bg-date-2 px-3 mt-4">
+          <div class="overlay-date-2"></div>
+          <div class="overlay-date-2-content">
+            <h1 class="beau f46 mb-4">Resepsi</h1>
+            <h3 class="abhaya-bold f16">Sabtu, 22 February 2025</h3>
+            <h3 class="abhaya-bold f16">Pukul : 10.00 - 12.00 WIB</h3>
+            <img src="img/location.png" class="img-fluid text-center mt-2 mb-3" style="width: 50px" alt="" />
+            <h3 class="abhaya-bold f16">
+              Lokasi: <br />
+              Gedung Niekmat Rasa <br />
+              Jl. Veteran No.284 Tipes, Serengan, Surakarta
+            </h3>
+            <a href="https://maps.app.goo.gl/be5K1fYdSPKqmwut7" target="_blank" class="btn-ig abhaya-bold mt-3">
+              <img src="img/loc.svg" style="width: 1rem" class="me-1" alt="" />
+              <span>Lihat Lokasi</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- love story -->
+    <div id="love-story" class="mobile-screen" style="background-color: rgb(210, 210, 210)">
+      <div class="container px-4 py-5 text-black" style="overflow-x: hidden">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="pt-2 pb-5 text-center">
+          <h1 class="abhaya-bold f40" style="line-height: 0.2">Our Love</h1>
+          <h1 class="beau f42">Story</h1>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-50" class="col-5">
+            <img src="img/stori-1.png" class="img-fluid" alt="" />
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-50" class="col-7">
+            <h1 class="abhaya-extrabold" style="line-height: 1">Awal <br />Bertemu</h1>
+            <h3 class="f16 abhaya-regular" style="font-style: italic">"Awal mula kami bertemu adalah dalam salah satu Sekolah Menengah Kejuruan yang ada di Solo sebagai siswa satu kelas."</h3>
+          </div>
+        </div>
+        <div class="my-5 row justify-content-center align-items-center">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-50" class="col-7 text-end">
+            <h1 class="abhaya-extrabold" style="line-height: 1">Komitmen</h1>
+            <h3 class="f16 abhaya-regular" style="font-style: italic">"Setelah berkomunikasi beberapa bulan dan menemukan kecocokan akhirnya kami memutuskan untuk menjalin sebuah komitmen."</h3>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-50" class="col-5">
+            <img src="img/stori-2.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-50" class="col-5">
+            <img src="img/stori-3.png" class="img-fluid" alt="" />
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="-50" class="col-7">
+            <h1 class="abhaya-extrabold" style="line-height: 1">Menikah</h1>
+            <h3 class="f16 abhaya-regular" style="font-style: italic">"Setelah menjalin hubungan beberapa tahun, akhirnya kami memantabkan hati untuk membawa hubungan ini ke jenjang yang lebih serius untuk hidup dan menua bersama."</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <div id="gallery" class="mobile-screen bg-white">
+      <div class="container px-4 py-5 text-black">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="pt-2 pb-5 text-center">
+          <h1 class="abhaya-extrabold f40" style="line-height: 0.2">PreWedding</h1>
+          <h1 class="beau f42">Gallery</h1>
+        </div>
+        <div class="gallery">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-10.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-11.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-4.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-13.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-8.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-1.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-5.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-12.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-6.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-2.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-3.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-7.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-9.webp" alt="galery" />
+            </figure>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" class="gallery-item">
+            <figure>
+              <img src="img/gallery/galeri-14.webp" alt="galery" />
+            </figure>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-regular text-black text-center f16 pt-5" style="line-height: 1.1; font-style: italic">
+          “I love you. I am who I am because of you. You are every reason, every hope, and every dream I've ever had, and no matter what happens to us in the future, everyday we are together is the greatest day of my life. I will always be
+          yours. ”
+        </div>
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="1500" class="divider-love">
+          <div class="divider bg-black"></div>
+          <div class="mx-2 f30">&#x2661;</div>
+          <div class="divider bg-black"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- wedding wishes -->
+    <div id="wishes" class="mobile-screen">
+      <div class="bg-ucapan" style="overflow-x: hidden">
+        <div class="overlay-ucapan"></div>
+        <div class="container px-4 py-5 text-black overlay-ucapan-content">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="pt-2 text-center">
+            <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
+            <h1 class="beau f42">Wishes</h1>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-regular text-black text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/ Ibu/ Saudara/ i berkenan hadir, untuk memberikan do'a restu kepada kedua mempelai.
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="ucapan p-4 my-5 text-start position-relative">
+            <div class="blur"></div>
+            <div class="container" style="z-index: 2; position: relative">
+              <!-- Success Message -->
+              <form class="pe-3" id="ucapan-form" action="{{ route('ucapan.store') }}" method="POST">
+                @csrf
+                <div class="mb-2">
+                  <input
+                    class="px-2 py-1 abhaya-regular"
+                    style="all: unset; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal"
+                    type="text"
+                    name="nama"
+                    id="nama"
+                    placeholder="Nama"
+                    value="{{ old('nama') }}"
+                    required
+                  />
+                </div>
+                <div class="mb-2">
+                  <textarea
+                    class="px-2 py-1 abhaya-regular"
+                    style="all: unset; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal"
+                    name="ucapan"
+                    id="ucapan"
+                    placeholder="Ucapan"
+                    required
+                  >
+{{ old('ucapan') }}</textarea
+                  >
+                </div>
+                <div class="mb-3">
+                  <select
+                    class="px-2 py-1 abhaya-regular"
+                    style="border: none; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal"
+                    name="hadir"
+                    id="hadir"
+                    required
+                  >
+                    <option value="" disabled selected hidden>Konfirmasi Kehadiran</option>
+                    <option value="1">Hadir</option>
+                    <option value="0">Tidak Hadir</option>
+                  </select>
+                </div>
+                <button
+                  type="submit"
+                  style="
+                    all: unset;
+                    text-decoration: none;
+                    background: #ffd700;
+                    padding: 8px 20px;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    color: black;
+                    width: fit-content;
+                    font-family: 'Abhaya Libre', serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                  "
+                >
+                  Kirim Ucapan
+                </button>
+              </form>
+
+              <!-- Optional: Display message after submission -->
+              <div id="response-popup" class="response-popup">
+                <div id="response-message"></div>
+              </div>
+            </div>
+          </div>
+          {{-- total hadir tidak hadir --}}
+          <div class="row justify-content-center mb-4">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="1500" class="col-5 abhaya-extrabold">
+              <div class="" style="background: green; padding: 5px; color: white; border-radius: 10px">
+                <div id="hadir-count" class="">{{ $ucapan->where('hadir', 1)->count() }}</div>
+                <div class="">Hadir</div>
+              </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="1500" class="col-5 abhaya-extrabold">
+              <div class="" style="background: red; padding: 5px; color: white; border-radius: 10px">
+                <div id="tidak-hadir-count" class="">{{ $ucapan->where('hadir', 0)->count() }}</div>
+                <div class="">Tidak Hadir</div>
+              </div>
+            </div>
+          </div>
+          <!-- Ucapan Count (Dynamic Count) -->
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="ucapan-count mt-3 text-center">
+            <strong><span id="ucapan-count">{{ $ucapan->count() }}</span> Ucapan</strong>
+          </div>
+          <!-- Displaying UCAPAN data -->
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="data-ucapan p-4 text-start" style="background: white; border-radius: 30px">
+            @php $visibleItems = 3; $totalItems = $ucapan->count(); @endphp
+
+            <div id="ucapan-list">
+              @foreach ($ucapan as $index => $item)
+              <div class="ucapan-item" style="{{ $index >= $visibleItems ? 'display:none;' : '' }}">
+                <div class="flex" style="display: flex; align-items: center">
+                  <img src="/img/flower.png" class="img-fluid" alt="" style="max-width: 40px; margin-right: 20px" />
+                  <div>
+                    <div class="abhaya-extrabold">{{ $item->nama }}</div>
+                    <p class="f12" style="margin-bottom: -3px">{{ \Carbon\Carbon::parse($item->created_at)->format('d M y') }}</p>
+                    <p class="abhaya-regular">{{ $item->ucapan }}</p>
+                  </div>
+                </div>
+                <hr />
+              </div>
+              @endforeach
+            </div>
+
+            @if ($totalItems > $visibleItems)
+            <div id="showMore" class="text-center mt-3 abhaya-extrabold cursor-pointer">
+              <div class="f16" style="margin-bottom: -5px">Show More</div>
+              <img src="/img/arrow.gif" style="rotate: 270deg; width: 20px" alt="" />
+            </div>
+            @endif
+          </div>
+        </div>
+      </div>
+      <div class="bg-black position-relative">
+        <div class="container px-4 pt-4" style="padding-bottom: 140px; margin-bottom: -2px">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-regular text-white text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
+            "Semoga Allah memberkahimu dan memberkahi apa yang menjadi tanggung jawabmu, serta menyatukan kalian berdua dalam kebaikan."
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-bold text-white text-center f16 pt-4 px-5" style="line-height: 1.1; font-style: italic">
+            (HR. Ahmad, at-Tirmidzi, an-Nasa'i, Abu Dawud, dan Ibnu Majah)
+          </div>
+        </div>
+        <img src="img/mask.png" style="width: 100%; position: absolute; bottom: 0" />
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- wedding gift -->
+    <div id="gift" class="bg-gift mobile-screen">
+      <div class="overlay-gift"></div>
+      <div class="container px-4 py-5 text-black overlay-gift-content">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="pt-2 text-center">
+          <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
+          <h1 class="beau f42">Gift</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="abhaya-regular text-black text-center f16 pt-4 mb-5" style="line-height: 1.1; font-style: italic">
+          Do'a restu keluarga, sahabat, serta rekan-rekan semua di pernikahan kami sudah sangat cukup sebagai hadiah, tetapi jika memberi merupakan tanda kasih, kami dengan senang hati menerimanya dan tentunya semakin melengkapi kebahagiaan
+          kami.
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="bank text-center p-5">
+          <div class="blur"></div>
+          <div class="position-relative" style="z-index: 2">
+            <img src="img/bca.png" class="img-fluid text-center mb-2" style="width: 100px" alt="" />
+            <div class="dvdr my-4" style="width: 100%; height: 1.5px; background: #000"></div>
+            <h3 class="abhaya-extrabold f20">
+              <span class="f18">atas nama</span> <br />
+              Irsyad Bagas Dwi Setiawan
+            </h3>
+            <h3 id="myText" class="abhaya-extrabold mt-3 mb-4">0780316756</h3>
+            <button onclick="copyText()" class="btn-copy abhaya-bold mt-3">
+              <img src="img/copy.svg" style="width: 1rem" class="me-2" alt="" />
+              <span class="mt-1 abhaya-bold">Salin</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup" class="popup">Berhasil menyalin nomor</div>
+    <!--  -->
+
+    <!-- footer -->
+    <div id="footer" class="bg-footer mobile-screen">
+      <div class="overlay-footer"></div>
+      <div class="container text-center py-5 overlay-footer-content">
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="1500" class="mt-4">
+          <img src="img/footer-img.png" class="img-fluid" style="width: 100px" alt="" />
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="1500" class="text-center text-white px-4" style="margin-top: 100px">
+          <h3 class="f12 abhaya-bold">KAMI YANG BERBAHAGIA</h3>
+          <h1 class="carattere f46">Irsyad & Fanny</h1>
+          <h3 class="f16 abhaya-bold">Atas kehadiran dan doa restunya kami ucapkan terima kasih</h3>
+        </div>
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="1500" class="divider-love">
+          <div class="divider"></div>
+          <div class="mx-2 f30 text-white">&#x2661;</div>
+          <div class="divider"></div>
+        </div>
+        <img data-aos="fade" data-aos-duration="1000" data-aos-offset="1500" src="img/flower.png" class="img-fluid mt-5" style="width: 60px" alt="" />
+        <div class="mt-4">
+          <p class="abhaya-bold text-white" style="line-height: 1.1">
+            Design by love: <br />
+            Isaddd
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      AOS.init();
+      // slider hero
+      $(document).ready(function () {
+        $(".hero-slider").slick({
+          //dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          infinite: true,
+          slidesToShow: 1,
+          arrows: false,
+          fade: true,
+          cssEase: "linear",
+        });
+      });
+
+      //slider swiper
+      $(document).ready(function () {
+        $(".slider-swiper").slick({
+          //dots: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          infinite: true,
+          slidesToShow: 4,
+          arrows: false,
+        });
+      });
+
+      //   countdown
+      // Set the date we're counting down to
+      var countdownDate = new Date("Feb 22, 2025 08:00:00").getTime();
+
+      // Update the countdown every 1 second
+      var x = setInterval(function () {
+        // Get the current date and time
+        var now = new Date().getTime();
+
+        // Find the time remaining
+        var distance = countdownDate - now;
+
+        // Calculate days, hours, minutes, and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result
+        document.getElementById("hari").innerHTML = days;
+        document.getElementById("jam").innerHTML = hours;
+        document.getElementById("menit").innerHTML = minutes;
+        document.getElementById("detik").innerHTML = seconds;
+
+        // If the countdown ends, display a message
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+
+      //  nama tamu undangan
+     // Function to get URL parameters
+  function getURLParameter(name) {
+    var urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
+
+  // Disable scrolling
+  function disableScroll() {
+    // Save the current scroll position
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+    // Disable scroll by preventing default scroll behavior
+    window.onscroll = function () {
+      window.scrollTo(scrollLeft, scrollTop); // Lock the scroll position
+    };
+
+    // Optionally disable smooth scrolling behavior in the root element
+    const rootElement = document.documentElement || document.body;
+    rootElement.style.scrollBehavior = "auto"; // Disable smooth scroll if enabled
+  }
+
+  // Enable scrolling and hide the overlay
+  function enableScroll() {
+    // Store in localStorage to remember the action (invitation opened)
+    localStorage.setItem("invitationOpened", "true");
+
+    // Reset the scroll position handler to allow normal scrolling
+    window.onscroll = null; // This removes the scroll blocking
+
+    // Optionally re-enable smooth scrolling behavior
+    const rootElement = document.documentElement || document.body;
+    rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
+
+    // Hide the full-screen overlay with animation
+    const fullScreenOverlay = document.getElementById("full-screen-overlay");
+    if (fullScreenOverlay) {
+      // Start the fade-out effect by setting opacity to 0
+      fullScreenOverlay.style.opacity = "1";
+
+      // Wait for the fade-out transition to finish, then hide it completely
+      setTimeout(function () {
+        fullScreenOverlay.style.display = "none"; // Set display to none after fade-out
+      }, 500); // 500ms matches the fade-out duration
+    }
+  }
+
+  // Check if the overlay should be shown on page reload
+  window.onload = function () {
+    // If the invitation has been opened (found in localStorage), hide the overlay
+    if (localStorage.getItem("invitationOpened") === "true") {
+      const fullScreenOverlay = document.getElementById("full-screen-overlay");
+      if (fullScreenOverlay) {
+        fullScreenOverlay.style.display = "none"; // Hide the overlay immediately
+      }
+    } else {
+      // If the invitation wasn't opened, disable scroll on page load
+      disableScroll();
+    }
+
+    // Get the guest's name from the URL and update the greeting
+    var guestName = getURLParameter("name");
+    if (guestName) {
+      var greetingElement = document.getElementById("greeting");
+      if (greetingElement) {
+        greetingElement.textContent = `${guestName}`;
+      }
+    }
+  };
+
+  // Disable scrolling initially, if the invitation hasn't been opened yet
+  if (localStorage.getItem("invitationOpened") !== "true") {
+    disableScroll();
+  }
+
+      //save the date
+      function saveToGoogleCalendar() {
+        // Google Calendar URL format for adding events
+        const eventTitle = "Wedding of Irsyad and Fanny";
+        const eventDetails = "Wedding of Irsyad and Fanny";
+        const eventLocation = "Niekmat Rasa";
+        const eventStartDate = "2025-02-22T10:00:00"; // YYYY-MM-DDTHH:MM:SS
+        const eventEndDate = "2025-02-22T12:00:00";
+
+        const googleCalendarURL = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&details=${encodeURIComponent(eventDetails)}&location=${encodeURIComponent(
+          eventLocation
+        )}&dates=${eventStartDate}/${eventEndDate}`;
+
+        // Redirect the user to the Google Calendar event page
+        window.open(googleCalendarURL, "_blank");
+      }
+
+      function copyText() {
+        /* Get the text from the <p> element */
+        var copyText = document.getElementById("myText").innerText;
+
+        /* Create a temporary text area to copy the text */
+        var textArea = document.createElement("textarea");
+        textArea.value = copyText;
+        document.body.appendChild(textArea);
+        textArea.select(); // Select the text
+        textArea.setSelectionRange(0, 99999); // For mobile devices
+
+        /* Copy the text to the clipboard */
+        document.execCommand("copy");
+
+        /* Remove the temporary text area */
+        document.body.removeChild(textArea);
+
+        /* Show the custom popup */
+        var popup = document.getElementById("popup");
+        popup.style.display = "block"; // Show the popup
+
+        /* Hide the popup after 2 seconds */
+        setTimeout(function () {
+          popup.style.display = "none"; // Hide the popup
+        }, 2000);
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Handle form submission via AJAX
+        $("#ucapan-form").on("submit", function (e) {
+          e.preventDefault(); // Prevent the default form submission
+
+          var formData = $(this).serialize(); // Serialize form data
+
+          $.ajax({
+            url: $(this).attr("action"), // Use the form action URL
+            type: "POST", // Form submission method
+            data: formData, // The serialized form data
+            success: function (response) {
+              // On success, display the response (ucapan added)
+              $("#response-message").html("<p>Terima kasih atas ucapannya!</p>");
+
+              // Show the popup
+              $("#response-popup").fadeIn(500); // Fade in the popup
+
+              // Optionally clear the form
+              $("#ucapan-form")[0].reset();
+
+              // Add the new ucapan to the top of the list
+              var newUcapanHtml = `
+                          <div class="ucapan-item">
+                              <div class="flex" style="display: flex; align-items: center;">
+                                  <img src="/img/flower.png" class="img-fluid" alt="" style="max-width: 40px; margin-right: 20px;">
+                                  <div>
+                                      <div class="abhaya-extrabold">${response.nama}</div>
+                                      <p class="f12" style="margin-bottom: -3px">${response.date}</p>
+                                      <p class="abhaya-regular">${response.ucapan}</p>
+                                  </div>
+                              </div>
+                              <hr>
+                          </div>
+                      `;
+              $("#ucapan-list").prepend(newUcapanHtml); // Prepend new ucapan to the list
+
+              // Optionally, show the "Show More" button if there are more than 3 items
+              var totalItems = $("#ucapan-list .ucapan-item").length;
+              if (totalItems > 3) {
+                $("#showMore").show();
+              }
+
+              // Update the count of ucapan, hadir, and tidak hadir below the form
+              $("#ucapan-count").text(response.total_ucapan); // Update the total ucapan count
+              $("#hadir-count").text(response.hadir_count); // Update the hadir count
+              $("#tidak-hadir-count").text(response.tidak_hadir_count); // Update the tidak hadir count
+
+              // Hide the popup after 2 seconds
+              setTimeout(function () {
+                $("#response-popup").fadeOut(500); // Fade out the popup after 2 seconds
+              }, 2000);
+            },
+            error: function (xhr, status, error) {
+              // Handle errors here (optional)
+              $("#response-message").html("<p>Terjadi kesalahan, coba lagi.</p>");
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
