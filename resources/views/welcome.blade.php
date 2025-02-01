@@ -33,9 +33,9 @@
         <h1 class="carattere f48" data-aos="fade-up" data-aos-duration="1000">Irsyad & Fanny</h1>
       </div>
       <div class="container surat-title-2"  style="z-index: 2;">
-        <h1 data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
-        <h1 data-aos="fade-up" data-aos-duration="1000" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
-        <a href="#wedding" data-aos="fade-up" data-aos-duration="1000" onClick="enableScroll()" class="btn-undangan abhaya-extrabold text-uppercase">Buka Undangan</a>
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
+        <a href="#wedding" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" onClick="enableScroll()" class="btn-undangan abhaya-extrabold text-uppercase">Buka Undangan</a>
       </div>
     </div>
     <!--  -->
@@ -358,7 +358,7 @@
 
     <!-- wedding wishes -->
     <div id="wishes" class="mobile-screen">
-      <div class="bg-ucapan" style="overflow-x: hidden">
+      <div class="bg-ucapan" style="overflow: hidden">
         <div class="overlay-ucapan"></div>
         <div class="container px-4 py-5 text-black overlay-ucapan-content">
           <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 text-center">
@@ -806,6 +806,12 @@
           });
         });
       });
+    </script>
+    <script>
+      // JavaScript untuk membatasi akses pada perangkat desktop
+      if (window.innerWidth > 768) {
+        document.body.innerHTML = '<div style="width: 100vw; height: 100vh; display:flex; align-items: center; justify-content:center;"><p class="text-center">Halaman ini hanya dapat diakses menggunakan perangkat mobile.</p></div>';
+      }
     </script>
   </body>
 </html>

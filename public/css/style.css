@@ -586,11 +586,11 @@ body {
 
 .mobile-screen {
     width: 100vw;
+    display: block;
 }
 
 @media only screen and (min-width: 1023px) {
     .mobile-screen {
-        width: 380px !important;
-        margin: auto;
+        display: none;
     }
 }
