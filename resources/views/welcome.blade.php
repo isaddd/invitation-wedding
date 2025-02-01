@@ -74,16 +74,16 @@
     <!-- getting married -->
     <div id="save-the-date" class="bg-black pt-5 mobile-screen">
       <div class="container pt-5 mt-4 text-center text-white">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">We Are</h1>
           <h1 class="beau f42">Getting Married</h1>
         </div>
-        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="-510" class="divider-love">
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="0" class="divider-love">
           <div class="divider"></div>
           <div class="mx-2 f30">&#x2661;</div>
           <div class="divider"></div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-550" class="desc px-4 py-4">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" class="desc px-4 py-4">
           <h3 class="f16 abhaya-regular mb-5">
             Siang dan malam berganti begitu cepat, diantara saat saat mendebarkan yang belum pernah kami rasakan sebelum nya. kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia:
           </h3>
@@ -92,7 +92,7 @@
             <span style="margin-top: 2.5px">SAVE THE DATE</span>
           </a>
         </div>
-        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="-550" class="slider-swiper px-4 pt-5">
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="-450" class="slider-swiper px-4 pt-5">
           <div class="img-swiper" style="width: 72px; height: 72px; border-radius: 50%; overflow: hidden !important; margin: 0 2px">
             <img src="img/slider/1.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
           </div>
@@ -115,11 +115,11 @@
 
     <!-- bride groom -->
     <div id="bride-groom" class="bg-black mobile-screen" style="padding-top: 70px; margin-top: -1px; padding-bottom: 70px; margin-bottom: -1px">
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-750" class="container d-flex justify-content-center align-items-center">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-650" class="container d-flex justify-content-center align-items-center">
         <img src="img/PNG-Instagram-Filter-1024x217.png" class="img-fluid" style="width: 170px" alt="" />
       </div>
       <div class="container text-white text-center">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-750" class="desc px-4 py-4">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-650" class="desc px-4 py-4">
           <h1 class="beau f42">Bride & Groom</h1>
           <h3 class="f16 abhaya-regular mt-4 mb-5">Maha Suci Allah Subhanahu wa Ta'ala yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah dan Ridhoilah Pernikahan Kami.</h3>
         </div>
