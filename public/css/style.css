@@ -121,13 +121,32 @@ html,
 body {
     margin: 0 !important;
     padding: 0 !important;
-    background-color: #000;
+    background-color: #000 !important;
 }
 .full {
     height: 100vh;
     width: 100vw;
     background: #000;
 }
+/* Full-screen overlay with black background */
+#full-screen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black; /* Ensure the background is black */
+    color: white; /* White text color for contrast */
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(0); /* Start position */
+    z-index: 9999; /* Ensure it's on top of other content */
+}
+
+/* Slide-up effect */
+#full-screen-overlay.slide-up {
+    transform: translateY(-100%); /* Moves the overlay out of view */
+}
+
 .full-screen {
     position: fixed;
     top: 0;
@@ -157,6 +176,7 @@ body {
     color: #fff;
 }
 .btn-undangan {
+    all: unset;
     background: #ffd700;
     padding: 10px 20px;
     text-decoration: none;
@@ -165,12 +185,16 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 .hero {
     margin: 0;
     padding: 0;
     height: 100vh;
     position: relative;
+    background: #000;
 }
 .hero-slider {
     height: 100vh;

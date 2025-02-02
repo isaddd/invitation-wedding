@@ -32,12 +32,13 @@
         <h1 class="abhaya-bold f16" data-aos="fade-up" data-aos-duration="1000">THE WEDDING OF</h1>
         <h1 class="carattere f48" data-aos="fade-up" data-aos-duration="1000">Irsyad & Fanny</h1>
       </div>
-      <div class="container surat-title-2"  style="z-index: 2;">
+      <div class="container surat-title-2" style="z-index: 2;">
         <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
         <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
-        <a href="#wedding" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" onClick="enableScroll()" class="btn-undangan abhaya-extrabold text-uppercase">Buka Undangan</a>
+        <button data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" onClick="enableScroll()" class="btn-undangan">BUKA UNDANGAN</button>
       </div>
     </div>
+    
     <!--  -->
 
     <!-- hero -->
@@ -627,81 +628,61 @@
 
       //  nama tamu undangan
      // Function to get URL parameters
-function getURLParameter(name) {
-  var urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(name);
-}
-
-// Disable scrolling
-function disableScroll() {
-  // Save the current scroll position
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-  // Disable scroll by preventing default scroll behavior
-  window.onscroll = function () {
-    window.scrollTo(scrollLeft, scrollTop); // Lock the scroll position
-  };
-
-  // Optionally disable smooth scrolling behavior in the root element
-  const rootElement = document.documentElement || document.body;
-  rootElement.style.scrollBehavior = "auto"; // Disable smooth scroll if enabled
-}
-
-// Enable scrolling and hide the overlay
-function enableScroll() {
-  // Reset the scroll position handler to allow normal scrolling
-  window.onscroll = null; // This removes the scroll blocking
-
-  // Optionally re-enable smooth scrolling behavior
-  const rootElement = document.documentElement || document.body;
-  rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
-
-  // Hide the full-screen overlay with animation
-  const fullScreenOverlay = document.getElementById("full-screen-overlay");
-  if (fullScreenOverlay) {
-    // Start the fade-out effect by setting opacity to 0
-    fullScreenOverlay.style.opacity = "1";
-
-    // Wait for the fade-out transition to finish, then hide it completely
-    setTimeout(function () {
-      fullScreenOverlay.style.display = "none"; // Set display to none after fade-out
-    }, 500); // 500ms matches the fade-out duration
-  }
-}
-
-// Check if the overlay should be shown on page reload
-window.onload = function () {
-  // Clear localStorage to reset invitation state on page reload
-  localStorage.removeItem("invitationOpened");
-
-  // Always show the full-screen overlay on reload
-  const fullScreenOverlay = document.getElementById("full-screen-overlay");
-  if (fullScreenOverlay) {
-    fullScreenOverlay.style.display = "block"; // Ensure overlay is visible
-
-    // Add click event to the overlay to scroll to the next section
-    fullScreenOverlay.addEventListener('click', function () {
-      // Scroll to the next section smoothly (assumes the target section has the id 'next-section')
-      const nextSection = document.getElementById("wedding");
-      if (nextSection) {
-        nextSection.scrollIntoView({ behavior: "smooth" });
+      function getURLParameter(name) {
+        var urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
       }
-    });
-  }
 
-  // Disable scroll since the invitation has not been opened yet
-  disableScroll();
+      // Disable scrolling
+      function disableScroll() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-  // Get the guest's name from the URL and update the greeting
-  var guestName = getURLParameter("name");
-  if (guestName) {
-    var greetingElement = document.getElementById("greeting");
-    if (greetingElement) {
-      greetingElement.textContent = `${guestName}`;
-    }
-  }
-};
+        window.onscroll = function () {
+          window.scrollTo(scrollLeft, scrollTop); // Lock the scroll position
+        };
+
+        const rootElement = document.documentElement || document.body;
+        rootElement.style.scrollBehavior = "auto"; // Disable smooth scroll if enabled
+      }
+
+      // Enable scrolling and hide the overlay with slide-up effect
+      function enableScroll() {
+        window.onscroll = null; // This removes the scroll blocking
+
+        const rootElement = document.documentElement || document.body;
+        rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
+
+        const fullScreenOverlay = document.getElementById("full-screen-overlay");
+        if (fullScreenOverlay) {
+          fullScreenOverlay.classList.add('slide-up'); // Trigger the slide-up animation
+
+          setTimeout(function () {
+            fullScreenOverlay.style.display = "none"; // Set display to none after the animation completes
+          }, 500); // Duration matches the CSS transition duration
+        }
+      }
+
+      // Check if the overlay should be shown on page reload
+      window.onload = function () {
+        localStorage.removeItem("invitationOpened");
+
+        const fullScreenOverlay = document.getElementById("full-screen-overlay");
+        if (fullScreenOverlay) {
+          fullScreenOverlay.style.display = "block"; // Ensure overlay is visible
+        }
+
+        disableScroll();
+
+        var guestName = getURLParameter("name");
+        if (guestName) {
+          var greetingElement = document.getElementById("greeting");
+          if (greetingElement) {
+            greetingElement.textContent = `${guestName}`;
+          }
+        }
+      };
+
 
       //save the date
       function saveToGoogleCalendar() {
