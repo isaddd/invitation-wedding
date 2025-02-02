@@ -58,8 +58,8 @@
       <div class="container title-hero">
         <div class="text-center">
           <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-600" class="beau" style="line-height: 0.75">The Wedding of</h1>
-          <h1 data-aos="fade-up" data-aos-duration="1000" class="abhaya-bold f48" style="margin-bottom: 20px">Irsyad & Fanny</h1>
-          <div class="countdown" data-aos="fade" data-aos-duration="1000" data-aos-offset="-200">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-600" class="abhaya-bold f48" style="margin-bottom: 20px">Irsyad & Fanny</h1>
+          <div class="countdown" data-aos="fade" data-aos-duration="1000" data-aos-offset="-600">
             <ul class="mx-auto">
               <li><span class="fs-1" id="hari"></span><br /><span class="">Hari</span></li>
               <li><span class="fs-1" id="jam"></span><br /><span class="">Jam</span></li>
