@@ -41,6 +41,24 @@
     
     <!--  -->
 
+    <audio id="audioPlayer" autoplay>
+      <source src="img/Chrisye-Untukku.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="position-fixed" style="bottom: 20px; right: 20px; z-index: 999;">
+      <div class="mb-2">
+        <a href="#wedding">
+          <img src="img/top.png" class="img-fluid" style="width: 25px; height: 25px;" alt="">
+        </a>
+      </div>
+      <div style="width: 25px; height: 25px; overflow: hidden; border-radius: 50%; margin: 0;">
+        <a id="audioToggleBtn" href="javascript:void(0);">
+          <img src="img/music.gif" class="img-fluid" style="object-fit: cover; width: 30.3px; height: 30.3px; object-position: center; margin-top: -3px;" alt="">
+        </a>
+      </div>
+    </div>
+
     <!-- hero -->
     <div id="wedding" class="hero position-relative mobile-screen">
       <div class="gradient-banner"></div>
@@ -595,6 +613,27 @@
         });
       });
 
+      //music
+      // Get references to the audio player and toggle button
+const audioPlayer = document.getElementById("audioPlayer");
+const audioToggleBtn = document.getElementById("audioToggleBtn");
+
+// Initial state of the audio: autoplay on load
+audioPlayer.play();
+
+// Toggle the audio play/pause when the button is clicked
+audioToggleBtn.addEventListener("click", function() {
+  if (audioPlayer.paused) {
+    // If the audio is paused, play it
+    audioPlayer.play();
+    // Optionally, you can change the icon or state of the button
+  } else {
+    // If the audio is playing, pause it
+    audioPlayer.pause();
+    // Optionally, change the icon or state of the button to indicate paused state
+  }
+});
+
       //   countdown
       // Set the date we're counting down to
       var countdownDate = new Date("Feb 22, 2025 08:00:00").getTime();
@@ -662,13 +701,19 @@ function enableScroll() {
     }, 500); // Duration matches the CSS transition duration
   }
 
-  // Save to localStorage to remember the action (invitation opened)
+  // Save to sessionStorage to remember the action (invitation opened)
   sessionStorage.setItem("invitationOpened", "true");
+
+  // Start audio playback after the overlay animation is complete
+  const audioPlayer = document.getElementById("audioPlayer");
+  if (audioPlayer) {
+    audioPlayer.play(); // Start playing audio after overlay hides
+  }
 }
 
 // Check if the overlay should be shown on page reload
 window.onload = function () {
-  // If the invitation has been opened (found in localStorage), hide the overlay
+  // If the invitation has been opened (found in sessionStorage), hide the overlay
   if (sessionStorage.getItem("invitationOpened") === "true") {
     const fullScreenOverlay = document.getElementById("full-screen-overlay");
     if (fullScreenOverlay) {
@@ -692,6 +737,7 @@ window.onload = function () {
     }
   }
 };
+
 
       //save the date
       function saveToGoogleCalendar() {
