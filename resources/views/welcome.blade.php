@@ -28,17 +28,17 @@
     <div id="full-screen-overlay" class="full position-relative mobile-screen" style="overflow: hidden">
       <div class="gradient-banner-surat"></div>
       <img src="img/black-3.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
-      <div class="container surat-title-1" style="z-index: 2">
+      <div class="container surat-title-1" style="z-index: 2;">
         <h1 class="abhaya-bold f16" data-aos="fade-up" data-aos-duration="1000">THE WEDDING OF</h1>
         <h1 class="carattere f48" data-aos="fade-up" data-aos-duration="1000">Irsyad & Fanny</h1>
       </div>
-      <div class="container surat-title-2" style="z-index: 2">
+      <div class="container surat-title-2" style="z-index: 2;">
         <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
         <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
         <button data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" onClick="enableScroll()" class="btn-undangan">BUKA UNDANGAN</button>
       </div>
     </div>
-
+    
     <!--  -->
 
     <!-- hero -->
@@ -493,7 +493,9 @@
           <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular text-white text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
             "Semoga Allah memberkahimu dan memberkahi apa yang menjadi tanggung jawabmu, serta menyatukan kalian berdua dalam kebaikan."
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-bold text-white text-center f16 pt-4 px-5" style="line-height: 1.1; font-style: italic">(HR. Ahmad, at-Tirmidzi, an-Nasa'i, Abu Dawud, dan Ibnu Majah)</div>
+          <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-bold text-white text-center f16 pt-4 px-5" style="line-height: 1.1; font-style: italic">
+            (HR. Ahmad, at-Tirmidzi, an-Nasa'i, Abu Dawud, dan Ibnu Majah)
+          </div>
         </div>
         <img src="img/mask.png" style="width: 100%; position: absolute; bottom: 0" />
       </div>
@@ -625,83 +627,71 @@
       }, 1000);
 
       //  nama tamu undangan
-      // Function to get URL parameters
-      function getURLParameter(name) {
-        var urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(name);
-      }
+     // Function to get URL parameters
+function getURLParameter(name) {
+  var urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
 
-      // Disable scrolling
-      function disableScroll() {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+// Disable scrolling
+function disableScroll() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-        window.onscroll = function () {
-          window.scrollTo(scrollLeft, scrollTop); // Lock the scroll position
-        };
+  window.onscroll = function () {
+    window.scrollTo(scrollLeft, scrollTop); // Lock the scroll position
+  };
 
-        const rootElement = document.documentElement || document.body;
-        rootElement.style.scrollBehavior = "auto"; // Disable smooth scroll if enabled
-      }
+  const rootElement = document.documentElement || document.body;
+  rootElement.style.scrollBehavior = "auto"; // Disable smooth scroll if enabled
+}
 
-      // Enable scrolling and hide the overlay with slide-up effect
-      function enableScroll() {
-        window.onscroll = null; // This removes the scroll blocking
+// Enable scrolling and hide the overlay with slide-up effect
+function enableScroll() {
+  window.onscroll = null; // This removes the scroll blocking
 
-        const rootElement = document.documentElement || document.body;
-        rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
+  const rootElement = document.documentElement || document.body;
+  rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
 
-        const fullScreenOverlay = document.getElementById("full-screen-overlay");
-        if (fullScreenOverlay) {
-          fullScreenOverlay.classList.add("slide-up"); // Trigger the slide-up animation
+  const fullScreenOverlay = document.getElementById("full-screen-overlay");
+  if (fullScreenOverlay) {
+    fullScreenOverlay.classList.add('slide-up'); // Trigger the slide-up animation
 
-          setTimeout(function () {
-            fullScreenOverlay.style.display = "none"; // Set display to none after the animation completes
-          }, 500); // Duration matches the CSS transition duration
-        }
-      }
+    setTimeout(function () {
+      fullScreenOverlay.style.display = "none"; // Set display to none after the animation completes
+    }, 500); // Duration matches the CSS transition duration
+  }
 
-      // Check if the overlay should be shown on page reload
-      window.onload = function () {
-        const fullScreenOverlay = document.getElementById("full-screen-overlay");
+  // Save to localStorage to remember the action (invitation opened)
+  sessionStorage.setItem("invitationOpened", "true");
+}
 
-        if (fullScreenOverlay) {
-          fullScreenOverlay.style.display = "block"; // Ensure overlay is visible
+// Check if the overlay should be shown on page reload
+window.onload = function () {
+  // If the invitation has been opened (found in localStorage), hide the overlay
+  if (sessionStorage.getItem("invitationOpened") === "true") {
+    const fullScreenOverlay = document.getElementById("full-screen-overlay");
+    if (fullScreenOverlay) {
+      fullScreenOverlay.style.display = "none"; // Hide the overlay immediately
+    }
+    enableScroll(); // Re-enable scrolling if invitation was already opened
+  } else {
+    // If the invitation hasn't been opened, disable scroll on page load
+    const fullScreenOverlay = document.getElementById("full-screen-overlay");
+    if (fullScreenOverlay) {
+      fullScreenOverlay.style.display = "block"; // Ensure overlay is visible
+    }
+    disableScroll(); // Disable scrolling until the user interacts with the overlay
+  }
 
-          // Scroll to the full-screen-overlay section smoothly
-          fullScreenOverlay.scrollIntoView({ block: "start" });
-
-          // Listen for scroll events to know when the page has stopped scrolling
-          window.addEventListener("scroll", onScrollComplete);
-        }
-
-        // Get the guest's name from the URL and update the greeting
-        var guestName = getURLParameter("name");
-        if (guestName) {
-          var greetingElement = document.getElementById("greeting");
-          if (greetingElement) {
-            greetingElement.textContent = `${guestName}`;
-          }
-        }
-
-        // Function to disable scroll once scroll is complete
-        function onScrollComplete() {
-          // Check if we've scrolled to the full-screen-overlay
-          const fullScreenOverlay = document.getElementById("full-screen-overlay");
-
-          if (fullScreenOverlay && isElementInView(fullScreenOverlay)) {
-            // Once the overlay is in view, disable scroll and remove the event listener
-            disableScroll();
-            window.removeEventListener("scroll", onScrollComplete);
-          }
-        }
-
-        // Function to check if an element is in view
-        function isElementInView(element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top >= 0 && rect.top <= window.innerHeight;
-        }
-      };
+  var guestName = getURLParameter("name");
+  if (guestName) {
+    var greetingElement = document.getElementById("greeting");
+    if (greetingElement) {
+      greetingElement.textContent = `${guestName}`;
+    }
+  }
+};
 
       //save the date
       function saveToGoogleCalendar() {
