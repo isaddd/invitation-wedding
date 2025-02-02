@@ -679,6 +679,15 @@ window.onload = function () {
   const fullScreenOverlay = document.getElementById("full-screen-overlay");
   if (fullScreenOverlay) {
     fullScreenOverlay.style.display = "block"; // Ensure overlay is visible
+
+    // Add click event to the overlay to scroll to the next section
+    fullScreenOverlay.addEventListener('click', function () {
+      // Scroll to the next section smoothly (assumes the target section has the id 'next-section')
+      const nextSection = document.getElementById("wedding");
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
   }
 
   // Disable scroll since the invitation has not been opened yet
