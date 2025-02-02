@@ -672,22 +672,22 @@ function getURLParameter(name) {
   return urlParams.get(name);
 }
 
-// Disable scrolling
+window.onload = function() {
+    window.scrollTo(0, 0);
+    disableScroll();
+};
+
+// Fungsi disableScroll untuk menonaktifkan scroll (contoh)
 function disableScroll() {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-  window.onscroll = function () {
-    window.scrollTo(scrollLeft, scrollTop); // Lock the scroll position
-  };
-
-  const rootElement = document.documentElement || document.body;
-  rootElement.style.scrollBehavior = "auto"; // Disable smooth scroll if enabled
+    // Menonaktifkan scroll dengan mengubah gaya overflow
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
 }
 
 // Enable scrolling and hide the overlay with slide-up effect
 function enableScroll() {
-  window.onscroll = null; // This removes the scroll blocking
+  document.body.style.overflow = '';
+  document.documentElement.style.overflow = '';
 
   const rootElement = document.documentElement || document.body;
   rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
@@ -699,10 +699,8 @@ function enableScroll() {
     setTimeout(function () {
       fullScreenOverlay.style.display = "none"; // Set display to none after the animation completes
     }, 500); // Duration matches the CSS transition duration
-  }
 
-  // Save to sessionStorage to remember the action (invitation opened)
-  sessionStorage.setItem("invitationOpened", "true");
+  }
 
   // Start audio playback after the overlay animation is complete
   const audioPlayer = document.getElementById("audioPlayer");
@@ -711,33 +709,14 @@ function enableScroll() {
   }
 }
 
-// Check if the overlay should be shown on page reload
-window.onload = function () {
-  // If the invitation has been opened (found in sessionStorage), hide the overlay
-  if (sessionStorage.getItem("invitationOpened") === "true") {
-    const fullScreenOverlay = document.getElementById("full-screen-overlay");
-    if (fullScreenOverlay) {
-      fullScreenOverlay.style.display = "none"; // Hide the overlay immediately
-    }
-    enableScroll(); // Re-enable scrolling if invitation was already opened
-  } else {
-    // If the invitation hasn't been opened, disable scroll on page load
-    const fullScreenOverlay = document.getElementById("full-screen-overlay");
-    if (fullScreenOverlay) {
-      fullScreenOverlay.style.display = "block"; // Ensure overlay is visible
-    }
-    disableScroll(); // Disable scrolling until the user interacts with the overlay
-  }
+document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+});
 
-  var guestName = getURLParameter("name");
-  if (guestName) {
-    var greetingElement = document.getElementById("greeting");
-    if (greetingElement) {
-      greetingElement.textContent = `${guestName}`;
-    }
-  }
-};
-
+if (window.location.hash) {
+    history.pushState("", document.title, window.location.pathname + window.location.search);
+}
 
       //save the date
       function saveToGoogleCalendar() {
