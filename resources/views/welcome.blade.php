@@ -27,7 +27,7 @@
     <!-- surat -->
     <div id="full-screen-overlay" class="full position-relative mobile-screen" style="overflow: hidden">
       <div class="gradient-banner-surat"></div>
-      <img src="img/black.jpg" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
+      <img src="img/black-3.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
       <div class="container surat-title-1" style="z-index: 2;">
         <h1 class="abhaya-bold f16" data-aos="fade-up" data-aos-duration="1000">THE WEDDING OF</h1>
         <h1 class="carattere f48" data-aos="fade-up" data-aos-duration="1000">Irsyad & Fanny</h1>
@@ -85,7 +85,7 @@
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="desc px-4 py-4">
           <h3 class="f16 abhaya-regular mb-5">
-            Siang dan malam berganti begitu cepat, diantara saat saat mendebarkan yang belum pernah kami rasakan sebelum nya. kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia:
+            Siang dan malam berganti begitu cepat, diantara saat saat mendebarkan yang belum pernah kami rasakan sebelum nya. kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia.
           </h3>
           <a href="#save-the-date" onclick="saveToGoogleCalendar()" class="btn-date abhaya-extrabold text-uppercase d-flex align-items-center justify-content-center">
             <img src="img/calendar.svg" style="width: 1rem" class="me-1" alt="" />
@@ -627,79 +627,72 @@
 
       //  nama tamu undangan
      // Function to get URL parameters
-  function getURLParameter(name) {
-    var urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(name);
-  }
+function getURLParameter(name) {
+  var urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
 
-  // Disable scrolling
-  function disableScroll() {
-    // Save the current scroll position
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+// Disable scrolling
+function disableScroll() {
+  // Save the current scroll position
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-    // Disable scroll by preventing default scroll behavior
-    window.onscroll = function () {
-      window.scrollTo(scrollLeft, scrollTop); // Lock the scroll position
-    };
-
-    // Optionally disable smooth scrolling behavior in the root element
-    const rootElement = document.documentElement || document.body;
-    rootElement.style.scrollBehavior = "auto"; // Disable smooth scroll if enabled
-  }
-
-  // Enable scrolling and hide the overlay
-  function enableScroll() {
-    // Store in localStorage to remember the action (invitation opened)
-    localStorage.setItem("invitationOpened", "true");
-
-    // Reset the scroll position handler to allow normal scrolling
-    window.onscroll = null; // This removes the scroll blocking
-
-    // Optionally re-enable smooth scrolling behavior
-    const rootElement = document.documentElement || document.body;
-    rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
-
-    // Hide the full-screen overlay with animation
-    const fullScreenOverlay = document.getElementById("full-screen-overlay");
-    if (fullScreenOverlay) {
-      // Start the fade-out effect by setting opacity to 0
-      fullScreenOverlay.style.opacity = "1";
-
-      // Wait for the fade-out transition to finish, then hide it completely
-      setTimeout(function () {
-        fullScreenOverlay.style.display = "none"; // Set display to none after fade-out
-      }, 500); // 500ms matches the fade-out duration
-    }
-  }
-
-  // Check if the overlay should be shown on page reload
-  window.onload = function () {
-    // If the invitation has been opened (found in localStorage), hide the overlay
-    if (localStorage.getItem("invitationOpened") === "true") {
-      const fullScreenOverlay = document.getElementById("full-screen-overlay");
-      if (fullScreenOverlay) {
-        fullScreenOverlay.style.display = "none"; // Hide the overlay immediately
-      }
-    } else {
-      // If the invitation wasn't opened, disable scroll on page load
-      disableScroll();
-    }
-
-    // Get the guest's name from the URL and update the greeting
-    var guestName = getURLParameter("name");
-    if (guestName) {
-      var greetingElement = document.getElementById("greeting");
-      if (greetingElement) {
-        greetingElement.textContent = `${guestName}`;
-      }
-    }
+  // Disable scroll by preventing default scroll behavior
+  window.onscroll = function () {
+    window.scrollTo(scrollLeft, scrollTop); // Lock the scroll position
   };
 
-  // Disable scrolling initially, if the invitation hasn't been opened yet
-  if (localStorage.getItem("invitationOpened") !== "true") {
-    disableScroll();
+  // Optionally disable smooth scrolling behavior in the root element
+  const rootElement = document.documentElement || document.body;
+  rootElement.style.scrollBehavior = "auto"; // Disable smooth scroll if enabled
+}
+
+// Enable scrolling and hide the overlay
+function enableScroll() {
+  // Reset the scroll position handler to allow normal scrolling
+  window.onscroll = null; // This removes the scroll blocking
+
+  // Optionally re-enable smooth scrolling behavior
+  const rootElement = document.documentElement || document.body;
+  rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
+
+  // Hide the full-screen overlay with animation
+  const fullScreenOverlay = document.getElementById("full-screen-overlay");
+  if (fullScreenOverlay) {
+    // Start the fade-out effect by setting opacity to 0
+    fullScreenOverlay.style.opacity = "1";
+
+    // Wait for the fade-out transition to finish, then hide it completely
+    setTimeout(function () {
+      fullScreenOverlay.style.display = "none"; // Set display to none after fade-out
+    }, 500); // 500ms matches the fade-out duration
   }
+}
+
+// Check if the overlay should be shown on page reload
+window.onload = function () {
+  // Clear localStorage to reset invitation state on page reload
+  localStorage.removeItem("invitationOpened");
+
+  // Always show the full-screen overlay on reload
+  const fullScreenOverlay = document.getElementById("full-screen-overlay");
+  if (fullScreenOverlay) {
+    fullScreenOverlay.style.display = "block"; // Ensure overlay is visible
+  }
+
+  // Disable scroll since the invitation has not been opened yet
+  disableScroll();
+
+  // Get the guest's name from the URL and update the greeting
+  var guestName = getURLParameter("name");
+  if (guestName) {
+    var greetingElement = document.getElementById("greeting");
+    if (greetingElement) {
+      greetingElement.textContent = `${guestName}`;
+    }
+  }
+};
 
       //save the date
       function saveToGoogleCalendar() {
