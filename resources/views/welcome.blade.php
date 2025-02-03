@@ -28,36 +28,36 @@
     <div id="invitation-wedding" class="full position-relative mobile-screen" style="overflow: hidden">
       <div class="gradient-banner-surat"></div>
       <img src="img/black-3.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
-      <div class="container surat-title-1" style="z-index: 2;">
+      <div class="container surat-title-1" style="z-index: 2">
         <h1 class="abhaya-bold f16" data-aos="zoom-in" data-aos-duration="1000">THE WEDDING OF</h1>
         <h1 class="carattere f48" data-aos="zoom-in" data-aos-duration="1000">Irsyad & Fanny</h1>
       </div>
-      <div class="container surat-title-2" style="z-index: 2;">
+      <div class="container surat-title-2" style="z-index: 2">
         <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-300" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
         <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-300" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
         <button data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-300" onClick="enableScroll()" class="btn-undangan">BUKA UNDANGAN</button>
       </div>
     </div>
-    
+
     <!--  -->
 
     <audio id="audioPlayer" autoplay>
-      <source src="img/Chrisye-Untukku.mp3" type="audio/mp3">
+      <source src="img/Chrisye-Untukku.mp3" type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
 
-    <div class="position-fixed" style="bottom: 20px; right: 20px; z-index: 999;">
+    <div class="position-fixed" style="bottom: 20px; right: 20px; z-index: 999">
       <div class="mb-2">
         <a href="#wedding">
           <svg class="icon-fixed" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
           </svg>
         </a>
       </div>
       <div>
         <a id="audioToggleBtn" class="playing" href="javascript:void(0);">
           <svg class="icon-fixed" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-disc-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-6 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0M4 8a4 4 0 0 1 4-4 .5.5 0 0 0 0-1 5 5 0 0 0-5 5 .5.5 0 0 0 1 0m9 0a.5.5 0 1 0-1 0 4 4 0 0 1-4 4 .5.5 0 0 0 0 1 5 5 0 0 0 5-5"/>
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-6 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0M4 8a4 4 0 0 1 4-4 .5.5 0 0 0 0-1 5 5 0 0 0-5 5 .5.5 0 0 0 1 0m9 0a.5.5 0 1 0-1 0 4 4 0 0 1-4 4 .5.5 0 0 0 0 1 5 5 0 0 0 5-5" />
           </svg>
         </a>
       </div>
@@ -137,7 +137,7 @@
     <!--  -->
 
     <!-- bride groom -->
-    <div id="bride-groom" class="bg-black mobile-screen" style="padding-top: 70px; margin-top: -1px; padding-bottom: 70px; margin-bottom: -1px; overflow-x: hidden;">
+    <div id="bride-groom" class="bg-black mobile-screen" style="padding-top: 70px; margin-top: -1px; padding-bottom: 70px; margin-bottom: -1px; overflow: hidden">
       <div data-aos="zoom-in" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center">
         <img src="img/PNG-Instagram-Filter-1024x217.png" class="img-fluid" style="width: 170px" alt="" />
       </div>
@@ -162,15 +162,15 @@
               <span>@geizka.fanny</span>
             </a>
           </div>
-          <div data-aos="fade-left" data-aos-duration="1000" class="divider-love">
+          <div data-aos="fade" data-aos-duration="1000" class="divider-love">
             <div class="divider"></div>
             <div class="mx-3 f46 carattere">&</div>
             <div class="divider"></div>
           </div>
-          <div data-aos="zoom-in" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center pt-4">
+          <div data-aos="fade-left" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center pt-4">
             <img src="img/irsyad.png" class="img-fluid" style="width: 170px" alt="" />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" class="text-center text-white mt-3">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="text-center text-white mt-3">
             <h2 class="abhaya-bold">Irsyad Bagas Dwi Setiawan S.Kom</h2>
             <div class="abhaya-bold">Putra dari</div>
             <div class="abhaya-bold">
@@ -515,9 +515,7 @@
           <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular text-white text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
             "Semoga Allah memberkahimu dan memberkahi apa yang menjadi tanggung jawabmu, serta menyatukan kalian berdua dalam kebaikan."
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-bold text-white text-center f16 pt-4 px-5" style="line-height: 1.1; font-style: italic">
-            (HR. Ahmad, at-Tirmidzi, an-Nasa'i, Abu Dawud, dan Ibnu Majah)
-          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-bold text-white text-center f16 pt-4 px-5" style="line-height: 1.1; font-style: italic">(HR. Ahmad, at-Tirmidzi, an-Nasa'i, Abu Dawud, dan Ibnu Majah)</div>
         </div>
         <img src="img/mask.png" style="width: 100%; position: absolute; bottom: 0" />
       </div>
@@ -545,7 +543,7 @@
               <span class="f18">atas nama</span> <br />
               Geizka Fanny Azzahra
             </h3>
-            <h3 id="myText" class="abhaya-extrabold mt-3 mb-4">0780364076</h3>
+            <h3 id="myText" class="abhaya-extrabold mt-3 mb-4" style="text-decoration: none">0780364076</h3>
             <button onclick="copyText()" class="btn-copy abhaya-bold mt-3">
               <img src="img/copy.svg" style="width: 1rem" class="me-2" alt="" />
               <span class="mt-1 abhaya-bold">Salin</span>
@@ -619,29 +617,29 @@
 
       //music
       // Get references to the audio player and toggle button
-const audioPlayer = document.getElementById("audioPlayer");
-const audioToggleBtn = document.getElementById("audioToggleBtn");
-const disc = document.getElementById("disc");
+      const audioPlayer = document.getElementById("audioPlayer");
+      const audioToggleBtn = document.getElementById("audioToggleBtn");
+      const disc = document.getElementById("disc");
 
-// Initial state of the audio: autoplay on load
-audioPlayer.play();
+      // Initial state of the audio: autoplay on load
+      audioPlayer.play();
 
-// Toggle the audio play/pause when the button is clicked
-audioToggleBtn.addEventListener("click", function() {
-  if (audioPlayer.paused) {
-    // If the audio is paused, play it
-    audioPlayer.play();
-    // Optionally, you can change the icon or state of the button
-    audioToggleBtn.classList.remove('paused');  // Remove paused class
-    audioToggleBtn.classList.add('playing');    // Add playing class
-  } else {
-    // If the audio is playing, pause it
-    audioPlayer.pause();
-    // Optionally, change the icon or state of the button to indicate paused state
-    audioToggleBtn.classList.remove('playing'); // Remove playing class
-    audioToggleBtn.classList.add('paused');     // Add paused class
-  }
-});
+      // Toggle the audio play/pause when the button is clicked
+      audioToggleBtn.addEventListener("click", function () {
+        if (audioPlayer.paused) {
+          // If the audio is paused, play it
+          audioPlayer.play();
+          // Optionally, you can change the icon or state of the button
+          audioToggleBtn.classList.remove("paused"); // Remove paused class
+          audioToggleBtn.classList.add("playing"); // Add playing class
+        } else {
+          // If the audio is playing, pause it
+          audioPlayer.pause();
+          // Optionally, change the icon or state of the button to indicate paused state
+          audioToggleBtn.classList.remove("playing"); // Remove playing class
+          audioToggleBtn.classList.add("paused"); // Add paused class
+        }
+      });
 
       //   countdown
       // Set the date we're counting down to
@@ -675,67 +673,66 @@ audioToggleBtn.addEventListener("click", function() {
       }, 1000);
 
       //  nama tamu undangan
-     // Function to get URL parameters
-function getURLParameter(name) {
-  var urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(name);
-}
-var guestName = getURLParameter("name");
-  if (guestName) {
-    var greetingElement = document.getElementById("greeting");
-    if (greetingElement) {
-      greetingElement.textContent = `${guestName}`;
-    }
-  }
+      // Function to get URL parameters
+      function getURLParameter(name) {
+        var urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+      }
+      var guestName = getURLParameter("name");
+      if (guestName) {
+        var greetingElement = document.getElementById("greeting");
+        if (greetingElement) {
+          greetingElement.textContent = `${guestName}`;
+        }
+      }
 
-window.onload = function() {
-    window.scrollTo(0, 0);
-    window.location.hash = "invitation-wedding";
-    disableScroll();
-};
+      window.onload = function () {
+        window.scrollTo(0, 0);
+        window.location.hash = "invitation-wedding";
+        disableScroll();
+      };
 
-// Fungsi disableScroll untuk menonaktifkan scroll (contoh)
-function disableScroll() {
-    // Menonaktifkan scroll dengan mengubah gaya overflow
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden';
-}
+      // Fungsi disableScroll untuk menonaktifkan scroll (contoh)
+      function disableScroll() {
+        // Menonaktifkan scroll dengan mengubah gaya overflow
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
+      }
 
-// Enable scrolling and hide the overlay with slide-up effect
-function enableScroll() {
-  document.body.style.overflow = '';
-  document.documentElement.style.overflow = '';
+      // Enable scrolling and hide the overlay with slide-up effect
+      function enableScroll() {
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
 
-  const rootElement = document.documentElement || document.body;
-  rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
+        const rootElement = document.documentElement || document.body;
+        rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
 
-  const fullScreenOverlay = document.getElementById("invitation-wedding");
-  if (fullScreenOverlay) {
-    fullScreenOverlay.classList.add('slide-up'); // Trigger the slide-up animation
+        const fullScreenOverlay = document.getElementById("invitation-wedding");
+        if (fullScreenOverlay) {
+          fullScreenOverlay.classList.add("slide-up"); // Trigger the slide-up animation
 
-    setTimeout(function () {
-      fullScreenOverlay.style.display = "none"; // Set display to none after the animation completes
-    }, 500); // Duration matches the CSS transition duration
+          setTimeout(function () {
+            fullScreenOverlay.style.display = "none"; // Set display to none after the animation completes
+          }, 500); // Duration matches the CSS transition duration
+        }
 
-  }
+        history.replaceState(null, null, window.location.pathname + window.location.search);
 
-  history.replaceState(null, null, window.location.pathname + window.location.search);
+        // Start audio playback after the overlay animation is complete
+        const audioPlayer = document.getElementById("audioPlayer");
+        if (audioPlayer) {
+          audioPlayer.play(); // Start playing audio after overlay hides
+        }
+      }
 
-  // Start audio playback after the overlay animation is complete
-  const audioPlayer = document.getElementById("audioPlayer");
-  if (audioPlayer) {
-    audioPlayer.play(); // Start playing audio after overlay hides
-  }
-}
+      document.addEventListener("DOMContentLoaded", function () {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      });
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-});
-
-if (window.location.hash) {
-    history.pushState("", document.title, window.location.pathname + window.location.search);
-}
+      if (window.location.hash) {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
 
       //save the date
       function saveToGoogleCalendar() {
