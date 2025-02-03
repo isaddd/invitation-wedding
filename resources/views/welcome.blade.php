@@ -396,7 +396,7 @@
               <div class="blur"></div>
               <div class="container" style="z-index: 2; position: relative">
                   <!-- Form -->
-                  <form class="pe-3" id="ucapan-form" action="{{ route('ucapan.store') }}" method="POST">
+                  <form class="pe-3" id="ucapan-form" action="https://irsyad-fanny.vercel.app/ucapan" method="POST">
                       @csrf
                       <div class="mb-2">
                           <input class="px-2 py-1 abhaya-regular" style="all: unset; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal" type="text" name="nama" id="nama" placeholder="Nama" value="{{ old('nama') }}" required />
