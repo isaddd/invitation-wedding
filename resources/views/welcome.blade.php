@@ -29,13 +29,13 @@
       <div class="gradient-banner-surat"></div>
       <img src="img/black-3.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
       <div class="container surat-title-1" style="z-index: 2;">
-        <h1 class="abhaya-bold f16" data-aos="fade-up" data-aos-duration="1000">THE WEDDING OF</h1>
-        <h1 class="carattere f48" data-aos="fade-up" data-aos-duration="1000">Irsyad & Fanny</h1>
+        <h1 class="abhaya-bold f16" data-aos="zoom-in" data-aos-duration="1000">THE WEDDING OF</h1>
+        <h1 class="carattere f48" data-aos="zoom-in" data-aos-duration="1000">Irsyad & Fanny</h1>
       </div>
       <div class="container surat-title-2" style="z-index: 2;">
-        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
-        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
-        <button data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-300" onClick="enableScroll()" class="btn-undangan">BUKA UNDANGAN</button>
+        <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-300" class="abhaya-regular f16" style="line-height: 0.6">Kepada Yth.</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-300" id="greeting" class="abhaya-bold mb-5 f24">‎</h1>
+        <button data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-300" onClick="enableScroll()" class="btn-undangan">BUKA UNDANGAN</button>
       </div>
     </div>
     
@@ -79,9 +79,9 @@
       </div>
       <div class="container title-hero">
         <div class="text-center">
-          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-600" class="beau" style="line-height: 0.75">The Wedding of</h1>
-          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-600" class="abhaya-bold f48" style="margin-bottom: 20px">Irsyad & Fanny</h1>
-          <div class="countdown" data-aos="fade" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-600" class="beau" style="line-height: 0.75">The Wedding of</h1>
+          <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-600" class="abhaya-bold f48" style="margin-bottom: 20px">Irsyad & Fanny</h1>
+          <div class="countdown" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-1000">
             <ul class="mx-auto">
               <li><span class="fs-1" id="hari"></span><br /><span class="">Hari</span></li>
               <li><span class="fs-1" id="jam"></span><br /><span class="">Jam</span></li>
@@ -97,11 +97,11 @@
     <!-- getting married -->
     <div id="save-the-date" class="bg-black pt-5 mobile-screen">
       <div class="container pt-5 mt-4 text-center text-white">
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <div data-aos="zoom-in" data-aos-duration="1000">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">We Are</h1>
           <h1 class="beau f42">Getting Married</h1>
         </div>
-        <div data-aos="fade" data-aos-duration="1000" class="divider-love">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="divider-love">
           <div class="divider"></div>
           <div class="mx-2 f30">&#x2661;</div>
           <div class="divider"></div>
@@ -137,20 +137,20 @@
     <!--  -->
 
     <!-- bride groom -->
-    <div id="bride-groom" class="bg-black mobile-screen" style="padding-top: 70px; margin-top: -1px; padding-bottom: 70px; margin-bottom: -1px">
-      <div data-aos="fade-up" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center">
+    <div id="bride-groom" class="bg-black mobile-screen" style="padding-top: 70px; margin-top: -1px; padding-bottom: 70px; margin-bottom: -1px; overflow-x: hidden;">
+      <div data-aos="zoom-in" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center">
         <img src="img/PNG-Instagram-Filter-1024x217.png" class="img-fluid" style="width: 170px" alt="" />
       </div>
       <div class="container text-white text-center">
-        <div data-aos="fade-up" data-aos-duration="1000" class="desc px-4 py-4">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="desc px-4 py-4">
           <h1 class="beau f42">Bride & Groom</h1>
           <h3 class="f16 abhaya-regular mt-4 mb-5">Maha Suci Allah Subhanahu wa Ta'ala yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah dan Ridhoilah Pernikahan Kami.</h3>
         </div>
         <div class="">
-          <div data-aos="fade-up" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center">
+          <div data-aos="fade-right" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center">
             <img src="img/fanny.png" class="img-fluid" style="width: 170px" alt="" />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" class="text-center text-white mt-3">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="text-center text-white mt-3">
             <h2 class="abhaya-bold">Geizka Fanny Azzahra</h2>
             <div class="abhaya-bold">Putri dari</div>
             <div class="abhaya-bold">
@@ -162,16 +162,16 @@
               <span>@geizka.fanny</span>
             </a>
           </div>
-          <div data-aos="fade" data-aos-duration="1000" class="divider-love">
+          <div data-aos="fade-left" data-aos-duration="1000" class="divider-love">
             <div class="divider"></div>
             <div class="mx-3 f46 carattere">&</div>
             <div class="divider"></div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center pt-4">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center pt-4">
             <img src="img/irsyad.png" class="img-fluid" style="width: 170px" alt="" />
           </div>
           <div data-aos="fade-up" data-aos-duration="1000" class="text-center text-white mt-3">
-            <h2 class="abhaya-bold">Irsyad Bagas Dwi Setiawan</h2>
+            <h2 class="abhaya-bold">Irsyad Bagas Dwi Setiawan S.Kom</h2>
             <div class="abhaya-bold">Putra dari</div>
             <div class="abhaya-bold">
               Bapak Slamet Supadi dan <br />
@@ -191,8 +191,8 @@
     <div id="qs" class="py-5 bg-qs mobile-screen">
       <div class="overlay-qs"></div>
       <div class="container overlay-qs-content">
-        <img data-aos="fade-up" data-aos-duration="1000" src="img/icon-wedding.png" class="img-fluid mb-4" style="width: 50px" alt="" />
-        <div data-aos="fade-up" data-aos-duration="1000" class="desc px-4 py-4">
+        <img data-aos="zoom-in" data-aos-duration="1000" src="img/icon-wedding.png" class="img-fluid mb-4" style="width: 50px" alt="" />
+        <div data-aos="zoom-in" data-aos-duration="1000" class="desc px-4 py-4">
           <h3 class="f16 abhaya-regular mb-4">
             "Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan hati dan dijadikannya kasih sayang di antara kamu. Sesungguhnya yang demikian menjadi tanda-tanda
             kebesaran-Nya bagi orang-orang yang berpikir."
@@ -207,7 +207,7 @@
     <div id="date" class="bg-date mobile-screen">
       <div class="overlay-date"></div>
       <div class="container overlay-date-content py-5 px-4" style="overflow-x: hidden">
-        <div data-aos="fade-up" data-aos-duration="1000" class="mt-2 mb-5">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="mt-2 mb-5">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Save</h1>
           <h1 class="beau f42">The Date</h1>
         </div>
@@ -234,7 +234,7 @@
           <div class="overlay-date-2-content">
             <h1 class="beau f46 mb-4">Resepsi</h1>
             <h3 class="abhaya-bold f16">Sabtu, 22 February 2025</h3>
-            <h3 class="abhaya-bold f16">Pukul : 10.00 - 12.00 WIB</h3>
+            <h3 class="abhaya-bold f16">Pukul : 10.00 WIB</h3>
             <img src="img/location.png" class="img-fluid text-center mt-2 mb-3" style="width: 50px" alt="" />
             <h3 class="abhaya-bold f16">
               Lokasi: <br />
@@ -254,7 +254,7 @@
     <!-- love story -->
     <div id="love-story" class="mobile-screen" style="background-color: rgb(210, 210, 210)">
       <div class="container px-4 py-5 text-black" style="overflow-x: hidden">
-        <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 pb-5 text-center">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="pt-2 pb-5 text-center">
           <h1 class="abhaya-bold f40" style="line-height: 0.2">Our Love</h1>
           <h1 class="beau f42">Story</h1>
         </div>
@@ -291,7 +291,7 @@
     <!-- gallery -->
     <div id="gallery" class="mobile-screen bg-white">
       <div class="container px-4 py-5 text-black">
-        <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 pb-5 text-center">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="pt-2 pb-5 text-center">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">PreWedding</h1>
           <h1 class="beau f42">Gallery</h1>
         </div>
@@ -384,7 +384,7 @@
       <div class="bg-ucapan" style="overflow: hidden">
         <div class="overlay-ucapan"></div>
         <div class="container px-4 py-5 text-black overlay-ucapan-content">
-          <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 text-center">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="pt-2 text-center">
             <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
             <h1 class="beau f42">Wishes</h1>
           </div>
@@ -528,7 +528,7 @@
     <div id="gift" class="bg-gift mobile-screen">
       <div class="overlay-gift"></div>
       <div class="container px-4 py-5 text-black overlay-gift-content">
-        <div data-aos="fade-up" data-aos-duration="1000" class="pt-2 text-center">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="pt-2 text-center">
           <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
           <h1 class="beau f42">Gift</h1>
         </div>
@@ -536,16 +536,16 @@
           Do'a restu keluarga, sahabat, serta rekan-rekan semua di pernikahan kami sudah sangat cukup sebagai hadiah, tetapi jika memberi merupakan tanda kasih, kami dengan senang hati menerimanya dan tentunya semakin melengkapi kebahagiaan
           kami.
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="bank text-center p-5">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="bank text-center p-5">
           <div class="blur"></div>
           <div class="position-relative" style="z-index: 2">
             <img src="img/bca.png" class="img-fluid text-center mb-2" style="width: 100px" alt="" />
             <div class="dvdr my-4" style="width: 100%; height: 1.5px; background: #000"></div>
             <h3 class="abhaya-extrabold f20">
               <span class="f18">atas nama</span> <br />
-              Irsyad Bagas Dwi Setiawan
+              Geizka Fanny Azzahra
             </h3>
-            <h3 id="myText" class="abhaya-extrabold mt-3 mb-4">0780316756</h3>
+            <h3 id="myText" class="abhaya-extrabold mt-3 mb-4">0780364076</h3>
             <button onclick="copyText()" class="btn-copy abhaya-bold mt-3">
               <img src="img/copy.svg" style="width: 1rem" class="me-2" alt="" />
               <span class="mt-1 abhaya-bold">Salin</span>
@@ -569,12 +569,12 @@
           <h1 class="carattere f46">Irsyad & Fanny</h1>
           <h3 class="f16 abhaya-bold">Atas kehadiran dan doa restunya kami ucapkan terima kasih</h3>
         </div>
-        <div data-aos="fade" data-aos-duration="1000" class="divider-love">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="divider-love">
           <div class="divider"></div>
           <div class="mx-2 f30 text-white">&#x2661;</div>
           <div class="divider"></div>
         </div>
-        <img data-aos="fade" data-aos-duration="1000" src="img/flower.png" class="img-fluid mt-5" style="width: 60px" alt="" />
+        <img data-aos="zoom-in" data-aos-duration="1000" src="img/flower.png" class="img-fluid mt-5" style="width: 60px" alt="" />
         <div class="mt-4">
           <p class="abhaya-bold text-white" style="line-height: 1.1">
             Design by love: <br />
