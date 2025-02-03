@@ -385,128 +385,101 @@
         <div class="overlay-ucapan"></div>
         <div class="container px-4 py-5 text-black overlay-ucapan-content">
           <div data-aos="zoom-in" data-aos-duration="1000" class="pt-2 text-center">
-            <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
-            <h1 class="beau f42">Wishes</h1>
+              <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
+              <h1 class="beau f42">Wishes</h1>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" class="abhaya-regular text-black text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
-            Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/ Ibu/ Saudara/ i berkenan hadir, untuk memberikan do'a restu kepada kedua mempelai.
+          <div class="abhaya-regular text-black text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
+              Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/ Ibu/ Saudara/ i berkenan hadir, untuk memberikan do'a restu kepada kedua mempelai.
           </div>
-
-          <div data-aos="fade-up" data-aos-duration="1000" class="ucapan p-4 my-5 text-start position-relative">
-            <div class="blur"></div>
-            <div class="container" style="z-index: 2; position: relative">
-              <!-- Success Message -->
-              <form class="pe-3" id="ucapan-form" action="{{ route('ucapan.store') }}" method="POST">
-                @csrf
-                <div class="mb-2">
-                  <input
-                    class="px-2 py-1 abhaya-regular"
-                    style="all: unset; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal"
-                    type="text"
-                    name="nama"
-                    id="nama"
-                    placeholder="Nama"
-                    value="{{ old('nama') }}"
-                    required
-                  />
-                </div>
-                <div class="mb-2">
-                  <textarea
-                    class="px-2 py-1 abhaya-regular"
-                    style="all: unset; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal"
-                    name="ucapan"
-                    id="ucapan"
-                    placeholder="Ucapan"
-                    required
-                  >
-{{ old('ucapan') }}</textarea
-                  >
-                </div>
-                <div class="mb-3">
-                  <select
-                    class="px-2 py-1 abhaya-regular"
-                    style="border: none; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal"
-                    name="hadir"
-                    id="hadir"
-                    required
-                  >
-                    <option value="" disabled selected hidden>Konfirmasi Kehadiran</option>
-                    <option value="1">Hadir</option>
-                    <option value="0">Tidak Hadir</option>
-                  </select>
-                </div>
-                <button
-                  type="submit"
-                  style="
-                    all: unset;
-                    text-decoration: none;
-                    background: #ffd700;
-                    padding: 8px 20px;
-                    text-decoration: none;
-                    border-radius: 10px;
-                    color: black;
-                    width: fit-content;
-                    font-family: 'Abhaya Libre', serif;
-                    font-weight: 600;
-                    font-style: normal;
-                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-                  "
-                >
-                  Kirim Ucapan
-                </button>
-              </form>
-
-              <!-- Optional: Display message after submission -->
-              <div id="response-popup" class="response-popup">
-                <div id="response-message"></div>
+      
+          <div class="ucapan p-4 my-5 text-start position-relative">
+              <div class="blur"></div>
+              <div class="container" style="z-index: 2; position: relative">
+                  <!-- Form -->
+                  <form class="pe-3" id="ucapan-form" action="{{ route('ucapan.store') }}" method="POST">
+                      @csrf
+                      <div class="mb-2">
+                          <input class="px-2 py-1 abhaya-regular" style="all: unset; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal" type="text" name="nama" id="nama" placeholder="Nama" value="{{ old('nama') }}" required />
+                      </div>
+                      <div class="mb-2">
+                          <textarea class="px-2 py-1 abhaya-regular" style="all: unset; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal" name="ucapan" id="ucapan" placeholder="Ucapan" required>{{ old('ucapan') }}</textarea>
+                      </div>
+                      <div class="mb-3">
+                          <select class="px-2 py-1 abhaya-regular" style="border: none; width: 100%; border-radius: 10px; background-color: #fff; color: black; font-family: 'Abhaya Libre', serif; font-weight: 400; font-style: normal" name="hadir" id="hadir" required>
+                              <option value="" disabled selected hidden>Konfirmasi Kehadiran</option>
+                              <option value="1">Hadir</option>
+                              <option value="0">Tidak Hadir</option>
+                          </select>
+                      </div>
+                      <button type="submit" id="submit-button" style="all: unset; text-decoration: none; background: #ffd700; padding: 8px 20px; text-decoration: none; border-radius: 10px; color: black; width: fit-content; font-family: 'Abhaya Libre', serif; font-weight: 600; font-style: normal; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+                          Kirim Ucapan
+                          <span id="loading-spinner" class="ms-1" style="display:none;">
+                              <div class="spinner-border text-dark" style="width: 20px; height: 20px; margin-right: 3px; margin-bottom: -4px;" role="status">
+                                  <span class="visually-hidden">Loading...</span>
+                              </div>  
+                          </span> 
+                      </button>
+                  </form>
+      
+                  <!-- Optional: Display message after submission -->
+                  <div id="response-popup" class="response-popup">
+                      <div id="response-message"></div>
+                  </div>
               </div>
-            </div>
           </div>
+      
           {{-- total hadir tidak hadir --}}
           <div class="row justify-content-center mb-4">
-            <div data-aos="fade-right" data-aos-duration="1000" class="col-5 abhaya-extrabold">
-              <div class="" style="background: green; padding: 5px; color: white; border-radius: 10px">
-                <div id="hadir-count" class="">{{ $ucapan->where('hadir', 1)->count() }}</div>
-                <div class="">Hadir</div>
+              <div data-aos="fade-right" data-aos-duration="1000" class="col-5 abhaya-extrabold">
+                  <div class="" style="background: green; padding: 5px; color: white; border-radius: 10px">
+                      <div id="hadir-count" class="">{{ $ucapan->where('hadir', 1)->count() }}</div>
+                      <div class="">Hadir</div>
+                  </div>
               </div>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="1000" class="col-5 abhaya-extrabold">
-              <div class="" style="background: red; padding: 5px; color: white; border-radius: 10px">
-                <div id="tidak-hadir-count" class="">{{ $ucapan->where('hadir', 0)->count() }}</div>
-                <div class="">Tidak Hadir</div>
+              <div data-aos="fade-left" data-aos-duration="1000" class="col-5 abhaya-extrabold">
+                  <div class="" style="background: red; padding: 5px; color: white; border-radius: 10px">
+                      <div id="tidak-hadir-count" class="">{{ $ucapan->where('hadir', 0)->count() }}</div>
+                      <div class="">Tidak Hadir</div>
+                  </div>
               </div>
-            </div>
           </div>
+      
           <!-- Ucapan Count (Dynamic Count) -->
-          <div data-aos="fade-up" data-aos-duration="1000" class="ucapan-count mt-3 text-center">
-            <strong><span id="ucapan-count">{{ $ucapan->count() }}</span> Ucapan</strong>
+          <div class="ucapan-count mt-3 text-center">
+              <strong><span id="ucapan-count">{{ $ucapan->count() }}</span> Ucapan</strong>
           </div>
           <!-- Displaying UCAPAN data -->
-          <div data-aos="fade-up" data-aos-duration="1000" class="data-ucapan p-4 text-start" style="background: white; border-radius: 30px">
-            @php $visibleItems = 3; $totalItems = $ucapan->count(); @endphp
-
-            <div id="ucapan-list">
-              @foreach ($ucapan as $index => $item)
-              <div class="ucapan-item" style="{{ $index >= $visibleItems ? 'display:none;' : '' }}">
-                <div class="flex" style="display: flex; align-items: center">
-                  <img src="/img/flower.png" class="img-fluid" alt="" style="max-width: 40px; margin-right: 20px" />
-                  <div>
-                    <div class="abhaya-extrabold">{{ $item->nama }}</div>
-                    <p class="f12" style="margin-bottom: -3px">{{ \Carbon\Carbon::parse($item->created_at)->format('d M y') }}</p>
-                    <p class="abhaya-regular">{{ $item->ucapan }}</p>
+          @php
+              $totalItems = $ucapan->count(); // Total number of ucapan
+              $visibleItems = 3; // Number of items initially visible
+          @endphp
+      
+          <div class="data-ucapan p-4 text-start" style="background: white; border-radius: 30px">
+              <div id="ucapan-list">
+                  @foreach ($ucapan as $index => $item)
+                  <div class="ucapan-item" style="{{ $index >= $visibleItems ? 'display:none;' : '' }}">
+                      <div class="flex" style="display: flex; align-items: center">
+                          <img src="/img/flower.png" class="img-fluid" alt="" style="max-width: 40px; margin-right: 20px" />
+                          <div>
+                              <div class="abhaya-extrabold">{{ $item->nama }}</div>
+                              <p class="f12" style="margin-bottom: -3px">{{ \Carbon\Carbon::parse($item->created_at)->format('d M y') }}</p>
+                              <p class="abhaya-regular">{{ $item->ucapan }}</p>
+                          </div>
+                      </div>
+                      <hr />
                   </div>
-                </div>
-                <hr />
+                  @endforeach
               </div>
-              @endforeach
-            </div>
+      
+              @if ($totalItems > 3)
+              <div id="showMore" class="text-center mt-3 abhaya-extrabold cursor-pointer">
+                  <div class="f16" style="margin-bottom: -5px">Show More</div>
+                  <img src="/img/arrow.gif" style="rotate: 270deg; width: 20px" alt="" />
+              </div>
+              @endif
+          </div>
+      </div>
 
-            @if ($totalItems > $visibleItems)
-            <div id="showMore" class="text-center mt-3 abhaya-extrabold cursor-pointer">
-              <div class="f16" style="margin-bottom: -5px">Show More</div>
-              <img src="/img/arrow.gif" style="rotate: 270deg; width: 20px" alt="" />
-            </div>
-            @endif
           </div>
         </div>
       </div>
@@ -780,28 +753,30 @@
     </script>
     <script>
       $(document).ready(function () {
-        // Handle form submission via AJAX
-        $("#ucapan-form").on("submit", function (e) {
-          e.preventDefault(); // Prevent the default form submission
-
-          var formData = $(this).serialize(); // Serialize form data
-
-          $.ajax({
-            url: $(this).attr("action"), // Use the form action URL
-            type: "POST", // Form submission method
-            data: formData, // The serialized form data
-            success: function (response) {
-              // On success, display the response (ucapan added)
-              $("#response-message").html("<p>Terima kasih atas ucapannya!</p>");
-
-              // Show the popup
-              $("#response-popup").fadeIn(500); // Fade in the popup
-
-              // Optionally clear the form
-              $("#ucapan-form")[0].reset();
-
-              // Add the new ucapan to the top of the list
-              var newUcapanHtml = `
+          // Handle form submission via AJAX
+          $("#ucapan-form").on("submit", function (e) {
+              e.preventDefault(); // Prevent the default form submission
+  
+              // Show the loading spinner
+              $("#loading-spinner").show();
+              $("#submit-button").prop("disabled", true); // Disable the button to prevent double submission
+  
+              var formData = $(this).serialize(); // Serialize form data
+  
+              $.ajax({
+                  url: $(this).attr("action"), // Use the form action URL
+                  type: "POST", // Form submission method
+                  data: formData, // The serialized form data
+                  success: function (response) {
+                      // On success, display the response (ucapan added)
+                      $("#response-message").html("<p>Terima kasih atas ucapannya!</p>");
+                      $("#response-popup").fadeIn(500); // Fade in the popup
+  
+                      // Optionally clear the form
+                      $("#ucapan-form")[0].reset();
+  
+                      // Add the new ucapan to the top of the list
+                      var newUcapanHtml = `
                           <div class="ucapan-item">
                               <div class="flex" style="display: flex; align-items: center;">
                                   <img src="/img/flower.png" class="img-fluid" alt="" style="max-width: 40px; margin-right: 20px;">
@@ -814,32 +789,44 @@
                               <hr>
                           </div>
                       `;
-              $("#ucapan-list").prepend(newUcapanHtml); // Prepend new ucapan to the list
-
-              // Optionally, show the "Show More" button if there are more than 3 items
-              var totalItems = $("#ucapan-list .ucapan-item").length;
-              if (totalItems > 3) {
-                $("#showMore").show();
-              }
-
-              // Update the count of ucapan, hadir, and tidak hadir below the form
-              $("#ucapan-count").text(response.total_ucapan); // Update the total ucapan count
-              $("#hadir-count").text(response.hadir_count); // Update the hadir count
-              $("#tidak-hadir-count").text(response.tidak_hadir_count); // Update the tidak hadir count
-
-              // Hide the popup after 2 seconds
-              setTimeout(function () {
-                $("#response-popup").fadeOut(500); // Fade out the popup after 2 seconds
-              }, 2000);
-            },
-            error: function (xhr, status, error) {
-              // Handle errors here (optional)
-              $("#response-message").html("<p>Terjadi kesalahan, coba lagi.</p>");
-            },
+                      $("#ucapan-list").prepend(newUcapanHtml); // Prepend new ucapan to the list
+  
+                      // Update the count of ucapan, hadir, and tidak hadir
+                      $("#ucapan-count").text(response.total_ucapan);
+                      $("#hadir-count").text(response.hadir_count);
+                      $("#tidak-hadir-count").text(response.tidak_hadir_count);
+  
+                      // Hide the popup after 2 seconds
+                      setTimeout(function () {
+                          $("#response-popup").fadeOut(500);
+                      }, 2000);
+  
+                      // Hide loading spinner and enable the button
+                      $("#loading-spinner").hide();
+                      $("#submit-button").prop("disabled", false);
+                  },
+                  error: function (xhr, status, error) {
+                      // Handle errors
+                      $("#response-message").html("<p>Terjadi kesalahan, coba lagi.</p>");
+                      $("#loading-spinner").hide();
+                      $("#submit-button").prop("disabled", false);
+                  },
+              });
           });
-        });
+  
+          $("#showMore").on("click", function () {
+              // Tampilkan lebih banyak ucapan
+              $(".ucapan-item").each(function (index) {
+                  if (index >= 3) {
+                      $(this).fadeIn(500); // Tampilkan item tersembunyi dengan fade effect
+                  }
+              });
+  
+              // Sembunyikan tombol "Show More" setelah semua item ditampilkan
+              $("#showMore").hide();
+          });
       });
-    </script>
+  </script>
     <script>
       // JavaScript untuk membatasi akses pada perangkat desktop
       if (window.innerWidth > 768) {
