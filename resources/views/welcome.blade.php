@@ -49,12 +49,16 @@
     <div class="position-fixed" style="bottom: 20px; right: 20px; z-index: 999;">
       <div class="mb-2">
         <a href="#wedding">
-          <img src="img/top.png" class="img-fluid" style="width: 25px; height: 25px;" alt="">
+          <svg class="icon-fixed" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+          </svg>
         </a>
       </div>
-      <div style="width: 25px; height: 25px; overflow: hidden; border-radius: 50%; margin: 0;">
-        <a id="audioToggleBtn" href="javascript:void(0);">
-          <img src="img/music.gif" class="img-fluid" style="object-fit: cover; width: 30.3px; height: 30.3px; object-position: center; margin-top: -3px;" alt="">
+      <div>
+        <a id="audioToggleBtn" class="playing" href="javascript:void(0);">
+          <svg class="icon-fixed" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-disc-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-6 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0M4 8a4 4 0 0 1 4-4 .5.5 0 0 0 0-1 5 5 0 0 0-5 5 .5.5 0 0 0 1 0m9 0a.5.5 0 1 0-1 0 4 4 0 0 1-4 4 .5.5 0 0 0 0 1 5 5 0 0 0 5-5"/>
+          </svg>
         </a>
       </div>
     </div>
@@ -617,6 +621,7 @@
       // Get references to the audio player and toggle button
 const audioPlayer = document.getElementById("audioPlayer");
 const audioToggleBtn = document.getElementById("audioToggleBtn");
+const disc = document.getElementById("disc");
 
 // Initial state of the audio: autoplay on load
 audioPlayer.play();
@@ -627,10 +632,14 @@ audioToggleBtn.addEventListener("click", function() {
     // If the audio is paused, play it
     audioPlayer.play();
     // Optionally, you can change the icon or state of the button
+    audioToggleBtn.classList.remove('paused');  // Remove paused class
+    audioToggleBtn.classList.add('playing');    // Add playing class
   } else {
     // If the audio is playing, pause it
     audioPlayer.pause();
     // Optionally, change the icon or state of the button to indicate paused state
+    audioToggleBtn.classList.remove('playing'); // Remove playing class
+    audioToggleBtn.classList.add('paused');     // Add paused class
   }
 });
 
@@ -671,6 +680,13 @@ function getURLParameter(name) {
   var urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(name);
 }
+var guestName = getURLParameter("name");
+  if (guestName) {
+    var greetingElement = document.getElementById("greeting");
+    if (greetingElement) {
+      greetingElement.textContent = `${guestName}`;
+    }
+  }
 
 window.onload = function() {
     window.scrollTo(0, 0);
