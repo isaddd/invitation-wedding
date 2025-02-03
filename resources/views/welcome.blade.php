@@ -388,11 +388,11 @@
               <h1 class="abhaya-extrabold f40" style="line-height: 0.2">Wedding</h1>
               <h1 class="beau f42">Wishes</h1>
           </div>
-          <div class="abhaya-regular text-black text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
+          <div  data-aos="zoom-in" data-aos-duration="1000" class="abhaya-regular text-black text-center f16 pt-4" style="line-height: 1.1; font-style: italic">
               Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/ Ibu/ Saudara/ i berkenan hadir, untuk memberikan do'a restu kepada kedua mempelai.
           </div>
       
-          <div class="ucapan p-4 my-5 text-start position-relative">
+          <div  data-aos="zoom-in" data-aos-duration="1000" class="ucapan p-4 my-5 text-start position-relative">
               <div class="blur"></div>
               <div class="container" style="z-index: 2; position: relative">
                   <!-- Form -->
@@ -445,7 +445,7 @@
           </div>
       
           <!-- Ucapan Count (Dynamic Count) -->
-          <div class="ucapan-count mt-3 text-center">
+          <div  data-aos="fade-up" data-aos-duration="1000" class="ucapan-count mt-3 text-center">
               <strong><span id="ucapan-count">{{ $ucapan->count() }}</span> Ucapan</strong>
           </div>
           <!-- Displaying UCAPAN data -->
@@ -454,7 +454,7 @@
               $visibleItems = 3; // Number of items initially visible
           @endphp
       
-          <div class="data-ucapan p-4 text-start" style="background: white; border-radius: 30px">
+          <div  data-aos="fade-up" data-aos-duration="1000" class="data-ucapan p-4 text-start" style="background: white; border-radius: 30px">
               <div id="ucapan-list">
                   @foreach ($ucapan as $index => $item)
                   <div class="ucapan-item" style="{{ $index >= $visibleItems ? 'display:none;' : '' }}">
