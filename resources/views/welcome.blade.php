@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- surat -->
-    <div id="full-screen-overlay" class="full position-relative mobile-screen" style="overflow: hidden">
+    <div id="invitation-wedding" class="full position-relative mobile-screen" style="overflow: hidden">
       <div class="gradient-banner-surat"></div>
       <img src="img/black-3.webp" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; object-position: center" alt="" />
       <div class="container surat-title-1" style="z-index: 2;">
@@ -690,6 +690,7 @@ var guestName = getURLParameter("name");
 
 window.onload = function() {
     window.scrollTo(0, 0);
+    window.location.hash = "invitation-wedding";
     disableScroll();
 };
 
@@ -708,7 +709,7 @@ function enableScroll() {
   const rootElement = document.documentElement || document.body;
   rootElement.style.scrollBehavior = "smooth"; // Optionally re-enable smooth scrolling
 
-  const fullScreenOverlay = document.getElementById("full-screen-overlay");
+  const fullScreenOverlay = document.getElementById("invitation-wedding");
   if (fullScreenOverlay) {
     fullScreenOverlay.classList.add('slide-up'); // Trigger the slide-up animation
 
@@ -717,6 +718,8 @@ function enableScroll() {
     }, 500); // Duration matches the CSS transition duration
 
   }
+
+  history.replaceState(null, null, window.location.pathname + window.location.search);
 
   // Start audio playback after the overlay animation is complete
   const audioPlayer = document.getElementById("audioPlayer");

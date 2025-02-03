@@ -166,7 +166,7 @@ body {
     background: #000;
 }
 /* Full-screen overlay with black background */
-#full-screen-overlay {
+#invitation-wedding {
     position: fixed;
     top: 0;
     left: 0;
@@ -180,7 +180,7 @@ body {
 }
 
 /* Slide-up effect */
-#full-screen-overlay.slide-up {
+#invitation-wedding.slide-up {
     transform: translateY(-100%); /* Moves the overlay out of view */
 }
 
