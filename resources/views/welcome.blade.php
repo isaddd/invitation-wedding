@@ -148,7 +148,7 @@
         </div>
         <div class="">
           <div data-aos="fade-right" data-aos-duration="1000" class="container d-flex justify-content-center align-items-center">
-            <img src="img/geizka.png" class="img-fluid" style="width: 170px" alt="" />
+            <img src="img/fanny.png" class="img-fluid" style="width: 170px" alt="" />
           </div>
           <div data-aos="zoom-in" data-aos-duration="1000" class="text-center text-white mt-3">
             <h2 class="abhaya-bold">Geizka Fanny Azzahra</h2>
